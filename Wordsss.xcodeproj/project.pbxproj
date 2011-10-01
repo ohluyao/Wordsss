@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE4F6D971437073200409C80 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4F6D961437073200409C80 /* MainStoryboard.storyboard */; };
 		FEBFBEFF1436DAF20028630E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBEFE1436DAF20028630E /* UIKit.framework */; };
 		FEBFBF011436DAF20028630E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF001436DAF20028630E /* Foundation.framework */; };
 		FEBFBF031436DAF20028630E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF021436DAF20028630E /* CoreGraphics.framework */; };
@@ -23,6 +24,9 @@
 		FEBFBF281436DAF20028630E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF261436DAF20028630E /* InfoPlist.strings */; };
 		FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF291436DAF20028630E /* WordsssTests.h */; };
 		FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF2B1436DAF20028630E /* WordsssTests.m */; };
+		FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7614370C0700A0E6AC /* ProfileViewController.m */; };
+		FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7A14370C1500A0E6AC /* RootViewController.m */; };
+		FEE37BB714370F7600A0E6AC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37BB614370F7600A0E6AC /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,24 +40,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE4F6D961437073200409C80 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Wordsss.xcodeproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		FEBFBEFA1436DAF20028630E /* Wordsss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordsss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBFBEFE1436DAF20028630E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEBFBF001436DAF20028630E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FEBFBF021436DAF20028630E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FEBFBF041436DAF20028630E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FEBFBF081436DAF20028630E /* Wordsss-Info.plist */ = {isa = PBXFileReference; path = "Wordsss-Info.plist"; sourceTree = "<group>"; };
+		FEBFBF081436DAF20028630E /* Wordsss-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wordsss-Info.plist"; sourceTree = "<group>"; };
 		FEBFBF0A1436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEBFBF0C1436DAF20028630E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEBFBF0E1436DAF20028630E /* Wordsss-Prefix.pch */ = {isa = PBXFileReference; path = "Wordsss-Prefix.pch"; sourceTree = "<group>"; };
-		FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */ = {isa = PBXFileReference; path = WordsssAppDelegate.h; sourceTree = "<group>"; };
+		FEBFBF0E1436DAF20028630E /* Wordsss-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wordsss-Prefix.pch"; sourceTree = "<group>"; };
+		FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssAppDelegate.h; sourceTree = "<group>"; };
 		FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssAppDelegate.m; sourceTree = "<group>"; };
 		FEBFBF131436DAF20028630E /* Wordsss.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wordsss.xcdatamodel; sourceTree = "<group>"; };
 		FEBFBF1A1436DAF20028630E /* WordsssTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsssTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBFBF1B1436DAF20028630E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FEBFBF251436DAF20028630E /* WordsssTests-Info.plist */ = {isa = PBXFileReference; path = "WordsssTests-Info.plist"; sourceTree = "<group>"; };
+		FEBFBF251436DAF20028630E /* WordsssTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordsssTests-Info.plist"; sourceTree = "<group>"; };
 		FEBFBF271436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEBFBF291436DAF20028630E /* WordsssTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssTests.h; sourceTree = "<group>"; };
 		FEBFBF2B1436DAF20028630E /* WordsssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssTests.m; sourceTree = "<group>"; };
+		FEE37B7514370C0700A0E6AC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		FEE37B7614370C0700A0E6AC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FEE37B7914370C1500A0E6AC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FEE37B7A14370C1500A0E6AC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FEE37BB514370F7600A0E6AC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FEE37BB614370F7600A0E6AC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2720941436DCA100CC45FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		FEBFBEEF1436DAF20028630E = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +136,13 @@
 		FEBFBF061436DAF20028630E /* Wordsss */ = {
 			isa = PBXGroup;
 			children = (
+				FE2720941436DCA100CC45FC /* Data */,
 				FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */,
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
-				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
+				FEE37B7914370C1500A0E6AC /* RootViewController.h */,
+				FEE37B7A14370C1500A0E6AC /* RootViewController.m */,
+				FEE37BB814370F7F00A0E6AC /* 5 Main Scenes */,
+				FE4F6D961437073200409C80 /* MainStoryboard.storyboard */,
 				FEBFBF071436DAF20028630E /* Supporting Files */,
 			);
 			path = Wordsss;
@@ -153,6 +176,17 @@
 				FEBFBF261436DAF20028630E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEE37BB814370F7F00A0E6AC /* 5 Main Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
+				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
+				FEE37BB514370F7600A0E6AC /* TestViewController.h */,
+				FEE37BB614370F7600A0E6AC /* TestViewController.m */,
+			);
+			name = "5 Main Scenes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBFBF0B1436DAF20028630E /* InfoPlist.strings in Resources */,
+				FE4F6D971437073200409C80 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +299,9 @@
 				FEBFBF0D1436DAF20028630E /* main.m in Sources */,
 				FEBFBF111436DAF20028630E /* WordsssAppDelegate.m in Sources */,
 				FEBFBF141436DAF20028630E /* Wordsss.xcdatamodeld in Sources */,
+				FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */,
+				FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */,
+				FEE37BB714370F7600A0E6AC /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +463,7 @@
 				FEBFBF311436DAF20028630E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEBFBF321436DAF20028630E /* Build configuration list for PBXNativeTarget "WordsssTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +472,7 @@
 				FEBFBF341436DAF20028630E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
