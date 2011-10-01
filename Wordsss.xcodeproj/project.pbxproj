@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEBFBEFF1436DAF20028630E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBEFE1436DAF20028630E /* UIKit.framework */; };
+		FEBFBF011436DAF20028630E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF001436DAF20028630E /* Foundation.framework */; };
+		FEBFBF031436DAF20028630E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF021436DAF20028630E /* CoreGraphics.framework */; };
+		FEBFBF051436DAF20028630E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF041436DAF20028630E /* CoreData.framework */; };
+		FEBFBF0B1436DAF20028630E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF091436DAF20028630E /* InfoPlist.strings */; };
+		FEBFBF0D1436DAF20028630E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF0C1436DAF20028630E /* main.m */; };
+		FEBFBF111436DAF20028630E /* WordsssAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */; };
+		FEBFBF141436DAF20028630E /* Wordsss.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */; };
+		FEBFBF1C1436DAF20028630E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF1B1436DAF20028630E /* SenTestingKit.framework */; };
+		FEBFBF1D1436DAF20028630E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBEFE1436DAF20028630E /* UIKit.framework */; };
+		FEBFBF1E1436DAF20028630E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF001436DAF20028630E /* Foundation.framework */; };
+		FEBFBF1F1436DAF20028630E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF021436DAF20028630E /* CoreGraphics.framework */; };
+		FEBFBF201436DAF20028630E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF041436DAF20028630E /* CoreData.framework */; };
+		FEBFBF281436DAF20028630E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF261436DAF20028630E /* InfoPlist.strings */; };
+		FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF291436DAF20028630E /* WordsssTests.h */; };
+		FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF2B1436DAF20028630E /* WordsssTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEBFBF211436DAF20028630E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBFBEF11436DAF20028630E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEBFBEF91436DAF20028630E;
+			remoteInfo = Wordsss;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEBFBEFA1436DAF20028630E /* Wordsss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordsss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBFBEFE1436DAF20028630E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEBFBF001436DAF20028630E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEBFBF021436DAF20028630E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEBFBF041436DAF20028630E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FEBFBF081436DAF20028630E /* Wordsss-Info.plist */ = {isa = PBXFileReference; path = "Wordsss-Info.plist"; sourceTree = "<group>"; };
+		FEBFBF0A1436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEBFBF0C1436DAF20028630E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEBFBF0E1436DAF20028630E /* Wordsss-Prefix.pch */ = {isa = PBXFileReference; path = "Wordsss-Prefix.pch"; sourceTree = "<group>"; };
+		FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */ = {isa = PBXFileReference; path = WordsssAppDelegate.h; sourceTree = "<group>"; };
+		FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssAppDelegate.m; sourceTree = "<group>"; };
+		FEBFBF131436DAF20028630E /* Wordsss.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wordsss.xcdatamodel; sourceTree = "<group>"; };
+		FEBFBF1A1436DAF20028630E /* WordsssTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsssTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBFBF1B1436DAF20028630E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FEBFBF251436DAF20028630E /* WordsssTests-Info.plist */ = {isa = PBXFileReference; path = "WordsssTests-Info.plist"; sourceTree = "<group>"; };
+		FEBFBF271436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEBFBF291436DAF20028630E /* WordsssTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssTests.h; sourceTree = "<group>"; };
+		FEBFBF2B1436DAF20028630E /* WordsssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEBFBEF71436DAF20028630E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBEFF1436DAF20028630E /* UIKit.framework in Frameworks */,
+				FEBFBF011436DAF20028630E /* Foundation.framework in Frameworks */,
+				FEBFBF031436DAF20028630E /* CoreGraphics.framework in Frameworks */,
+				FEBFBF051436DAF20028630E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBFBF161436DAF20028630E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBF1C1436DAF20028630E /* SenTestingKit.framework in Frameworks */,
+				FEBFBF1D1436DAF20028630E /* UIKit.framework in Frameworks */,
+				FEBFBF1E1436DAF20028630E /* Foundation.framework in Frameworks */,
+				FEBFBF1F1436DAF20028630E /* CoreGraphics.framework in Frameworks */,
+				FEBFBF201436DAF20028630E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEBFBEEF1436DAF20028630E = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF061436DAF20028630E /* Wordsss */,
+				FEBFBF231436DAF20028630E /* WordsssTests */,
+				FEBFBEFD1436DAF20028630E /* Frameworks */,
+				FEBFBEFB1436DAF20028630E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBFBEFB1436DAF20028630E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBEFA1436DAF20028630E /* Wordsss.app */,
+				FEBFBF1A1436DAF20028630E /* WordsssTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEBFBEFD1436DAF20028630E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBEFE1436DAF20028630E /* UIKit.framework */,
+				FEBFBF001436DAF20028630E /* Foundation.framework */,
+				FEBFBF021436DAF20028630E /* CoreGraphics.framework */,
+				FEBFBF041436DAF20028630E /* CoreData.framework */,
+				FEBFBF1B1436DAF20028630E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEBFBF061436DAF20028630E /* Wordsss */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */,
+				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
+				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
+				FEBFBF071436DAF20028630E /* Supporting Files */,
+			);
+			path = Wordsss;
+			sourceTree = "<group>";
+		};
+		FEBFBF071436DAF20028630E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF081436DAF20028630E /* Wordsss-Info.plist */,
+				FEBFBF091436DAF20028630E /* InfoPlist.strings */,
+				FEBFBF0C1436DAF20028630E /* main.m */,
+				FEBFBF0E1436DAF20028630E /* Wordsss-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEBFBF231436DAF20028630E /* WordsssTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF291436DAF20028630E /* WordsssTests.h */,
+				FEBFBF2B1436DAF20028630E /* WordsssTests.m */,
+				FEBFBF241436DAF20028630E /* Supporting Files */,
+			);
+			path = WordsssTests;
+			sourceTree = "<group>";
+		};
+		FEBFBF241436DAF20028630E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFBF251436DAF20028630E /* WordsssTests-Info.plist */,
+				FEBFBF261436DAF20028630E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEBFBEF91436DAF20028630E /* Wordsss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBFBF2F1436DAF20028630E /* Build configuration list for PBXNativeTarget "Wordsss" */;
+			buildPhases = (
+				FEBFBEF61436DAF20028630E /* Sources */,
+				FEBFBEF71436DAF20028630E /* Frameworks */,
+				FEBFBEF81436DAF20028630E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wordsss;
+			productName = Wordsss;
+			productReference = FEBFBEFA1436DAF20028630E /* Wordsss.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEBFBF191436DAF20028630E /* WordsssTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBFBF321436DAF20028630E /* Build configuration list for PBXNativeTarget "WordsssTests" */;
+			buildPhases = (
+				FEBFBF151436DAF20028630E /* Sources */,
+				FEBFBF161436DAF20028630E /* Frameworks */,
+				FEBFBF171436DAF20028630E /* Resources */,
+				FEBFBF181436DAF20028630E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEBFBF221436DAF20028630E /* PBXTargetDependency */,
+			);
+			name = WordsssTests;
+			productName = WordsssTests;
+			productReference = FEBFBF1A1436DAF20028630E /* WordsssTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEBFBEF11436DAF20028630E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Ren Inc.";
+			};
+			buildConfigurationList = FEBFBEF41436DAF20028630E /* Build configuration list for PBXProject "Wordsss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEBFBEEF1436DAF20028630E;
+			productRefGroup = FEBFBEFB1436DAF20028630E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEBFBEF91436DAF20028630E /* Wordsss */,
+				FEBFBF191436DAF20028630E /* WordsssTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEBFBEF81436DAF20028630E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBF0B1436DAF20028630E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBFBF171436DAF20028630E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBF281436DAF20028630E /* InfoPlist.strings in Resources */,
+				FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEBFBF181436DAF20028630E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEBFBEF61436DAF20028630E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBF0D1436DAF20028630E /* main.m in Sources */,
+				FEBFBF111436DAF20028630E /* WordsssAppDelegate.m in Sources */,
+				FEBFBF141436DAF20028630E /* Wordsss.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBFBF151436DAF20028630E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEBFBF221436DAF20028630E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEBFBEF91436DAF20028630E /* Wordsss */;
+			targetProxy = FEBFBF211436DAF20028630E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEBFBF091436DAF20028630E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBFBF0A1436DAF20028630E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEBFBF261436DAF20028630E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBFBF271436DAF20028630E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEBFBF2D1436DAF20028630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEBFBF2E1436DAF20028630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEBFBF301436DAF20028630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
+				INFOPLIST_FILE = "Wordsss/Wordsss-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEBFBF311436DAF20028630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
+				INFOPLIST_FILE = "Wordsss/Wordsss-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEBFBF331436DAF20028630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wordsss.app/Wordsss";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
+				INFOPLIST_FILE = "WordsssTests/WordsssTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FEBFBF341436DAF20028630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wordsss.app/Wordsss";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
+				INFOPLIST_FILE = "WordsssTests/WordsssTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEBFBEF41436DAF20028630E /* Build configuration list for PBXProject "Wordsss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBFBF2D1436DAF20028630E /* Debug */,
+				FEBFBF2E1436DAF20028630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBFBF2F1436DAF20028630E /* Build configuration list for PBXNativeTarget "Wordsss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBFBF301436DAF20028630E /* Debug */,
+				FEBFBF311436DAF20028630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEBFBF321436DAF20028630E /* Build configuration list for PBXNativeTarget "WordsssTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBFBF331436DAF20028630E /* Debug */,
+				FEBFBF341436DAF20028630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEBFBF131436DAF20028630E /* Wordsss.xcdatamodel */,
+			);
+			currentVersion = FEBFBF131436DAF20028630E /* Wordsss.xcdatamodel */;
+			path = Wordsss.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FEBFBEF11436DAF20028630E /* Project object */;
+}
