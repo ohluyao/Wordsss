@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FE4F6D971437073200409C80 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4F6D961437073200409C80 /* MainStoryboard.storyboard */; };
+		FE6C8DB514385A2F00DC9784 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB414385A2F00DC9784 /* UserDataManager.m */; };
+		FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB714385AAD00DC9784 /* TodayViewController.m */; };
+		FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBA14385AC400DC9784 /* BooksViewController.m */; };
+		FE6C8DBE14385ACE00DC9784 /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */; };
 		FEBFBEFF1436DAF20028630E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBEFE1436DAF20028630E /* UIKit.framework */; };
 		FEBFBF011436DAF20028630E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF001436DAF20028630E /* Foundation.framework */; };
 		FEBFBF031436DAF20028630E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF021436DAF20028630E /* CoreGraphics.framework */; };
@@ -24,10 +28,8 @@
 		FEBFBF281436DAF20028630E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF261436DAF20028630E /* InfoPlist.strings */; };
 		FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF291436DAF20028630E /* WordsssTests.h */; };
 		FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF2B1436DAF20028630E /* WordsssTests.m */; };
-		FEE053D5143798620068CDEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053D4143798620068CDEC /* Icon.png */; };
+		FEC5066114383F99008E01C2 /* DefaultProfileImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */; };
 		FEE053D71437987A0068CDEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053D61437987A0068CDEC /* Icon.png */; };
-		FEE053DC14379ACD0068CDEC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DA14379ACD0068CDEC /* Background.png */; };
-		FEE053DD14379ACD0068CDEC /* Launch Images 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */; };
 		FEE053DF14379ADC0068CDEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DE14379ADC0068CDEC /* Default@2x.png */; };
 		FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7614370C0700A0E6AC /* ProfileViewController.m */; };
 		FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7A14370C1500A0E6AC /* RootViewController.m */; };
@@ -46,6 +48,14 @@
 
 /* Begin PBXFileReference section */
 		FE4F6D961437073200409C80 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Wordsss.xcodeproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		FE6C8DB314385A2F00DC9784 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
+		FE6C8DB414385A2F00DC9784 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
+		FE6C8DB614385AAD00DC9784 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		FE6C8DB714385AAD00DC9784 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		FE6C8DB914385AC400DC9784 /* BooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksViewController.h; sourceTree = "<group>"; };
+		FE6C8DBA14385AC400DC9784 /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
+		FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
+		FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsViewController.m; sourceTree = "<group>"; };
 		FEBFBEFA1436DAF20028630E /* Wordsss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordsss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBFBEFE1436DAF20028630E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEBFBF001436DAF20028630E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,11 +74,9 @@
 		FEBFBF271436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEBFBF291436DAF20028630E /* WordsssTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssTests.h; sourceTree = "<group>"; };
 		FEBFBF2B1436DAF20028630E /* WordsssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssTests.m; sourceTree = "<group>"; };
-		FEE053D4143798620068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		FEE053D61437987A0068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		FEE053DA14379ACD0068CDEC /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
-		FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch Images 2x.png"; sourceTree = "<group>"; };
-		FEE053DE14379ADC0068CDEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultProfileImage.jpg; sourceTree = "<group>"; };
+		FEE053D61437987A0068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		FEE053DE14379ADC0068CDEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		FEE37B7514370C0700A0E6AC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		FEE37B7614370C0700A0E6AC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		FEE37B7914370C1500A0E6AC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -112,11 +120,49 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		FE3FF9AC14384DF400687C80 /* XMLManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XMLManager;
+			sourceTree = "<group>";
+		};
+		FE3FF9AD14384E1500687C80 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FE6C8DB314385A2F00DC9784 /* UserDataManager.h */,
+				FE6C8DB414385A2F00DC9784 /* UserDataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		FE6C8DBF14385AD900DC9784 /* 5 Main */ = {
+			isa = PBXGroup;
+			children = (
+				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
+				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
+				FEE37BB514370F7600A0E6AC /* TestViewController.h */,
+				FEE37BB614370F7600A0E6AC /* TestViewController.m */,
+				FE6C8DB614385AAD00DC9784 /* TodayViewController.h */,
+				FE6C8DB714385AAD00DC9784 /* TodayViewController.m */,
+				FE6C8DB914385AC400DC9784 /* BooksViewController.h */,
+				FE6C8DBA14385AC400DC9784 /* BooksViewController.m */,
+				FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */,
+				FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */,
+			);
+			name = "5 Main";
+			sourceTree = "<group>";
+		};
+		FE6C8DF31438735500DC9784 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FEBFBEEF1436DAF20028630E = {
 			isa = PBXGroup;
 			children = (
-				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
-				FEE053D61437987A0068CDEC /* Icon.png */,
 				FEBFBF061436DAF20028630E /* Wordsss */,
 				FEBFBF231436DAF20028630E /* WordsssTests */,
 				FEBFBEFD1436DAF20028630E /* Frameworks */,
@@ -148,14 +194,14 @@
 		FEBFBF061436DAF20028630E /* Wordsss */ = {
 			isa = PBXGroup;
 			children = (
-				FEE053D2143798490068CDEC /* Resources */,
-				FE2720941436DCA100CC45FC /* Data */,
 				FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */,
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
-				FEE37B7914370C1500A0E6AC /* RootViewController.h */,
-				FEE37B7A14370C1500A0E6AC /* RootViewController.m */,
-				FEE37BB814370F7F00A0E6AC /* 5 Main Scenes */,
-				FE4F6D961437073200409C80 /* MainStoryboard.storyboard */,
+				FEE37BB814370F7F00A0E6AC /* Scene */,
+				FE6C8DF31438735500DC9784 /* Model */,
+				FE3FF9AD14384E1500687C80 /* DataManager */,
+				FE2720941436DCA100CC45FC /* Data */,
+				FE3FF9AC14384DF400687C80 /* XMLManager */,
+				FEE053D2143798490068CDEC /* Resources */,
 				FEBFBF071436DAF20028630E /* Supporting Files */,
 			);
 			path = Wordsss;
@@ -194,22 +240,22 @@
 		FEE053D2143798490068CDEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FEE053DA14379ACD0068CDEC /* Background.png */,
-				FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */,
-				FEE053D4143798620068CDEC /* Icon.png */,
+				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
+				FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */,
+				FEE053D61437987A0068CDEC /* Icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		FEE37BB814370F7F00A0E6AC /* 5 Main Scenes */ = {
+		FEE37BB814370F7F00A0E6AC /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
-				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
-				FEE37BB514370F7600A0E6AC /* TestViewController.h */,
-				FEE37BB614370F7600A0E6AC /* TestViewController.m */,
+				FE4F6D961437073200409C80 /* MainStoryboard.storyboard */,
+				FEE37B7914370C1500A0E6AC /* RootViewController.h */,
+				FEE37B7A14370C1500A0E6AC /* RootViewController.m */,
+				FE6C8DBF14385AD900DC9784 /* 5 Main */,
 			);
-			name = "5 Main Scenes";
+			name = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +330,9 @@
 			files = (
 				FEBFBF0B1436DAF20028630E /* InfoPlist.strings in Resources */,
 				FE4F6D971437073200409C80 /* MainStoryboard.storyboard in Resources */,
-				FEE053D5143798620068CDEC /* Icon.png in Resources */,
 				FEE053D71437987A0068CDEC /* Icon.png in Resources */,
-				FEE053DC14379ACD0068CDEC /* Background.png in Resources */,
-				FEE053DD14379ACD0068CDEC /* Launch Images 2x.png in Resources */,
 				FEE053DF14379ADC0068CDEC /* Default@2x.png in Resources */,
+				FEC5066114383F99008E01C2 /* DefaultProfileImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +374,10 @@
 				FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */,
 				FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */,
 				FEE37BB714370F7600A0E6AC /* TestViewController.m in Sources */,
+				FE6C8DB514385A2F00DC9784 /* UserDataManager.m in Sources */,
+				FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */,
+				FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */,
+				FE6C8DBE14385ACE00DC9784 /* ListsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

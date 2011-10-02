@@ -10,4 +10,7 @@
 
 @interface ProfileViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIImageView* profileImageView;
+@property (nonatomic, retain) IBOutlet UILabel* nicknameLabel;
+
 @end
