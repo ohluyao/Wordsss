@@ -12,6 +12,10 @@
 		FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB714385AAD00DC9784 /* TodayViewController.m */; };
 		FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBA14385AC400DC9784 /* BooksViewController.m */; };
 		FE6C8DBE14385ACE00DC9784 /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */; };
+		FEA70AC614387F4F0025313C /* TestDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC514387F4F0025313C /* TestDelegater.m */; };
+		FEA70AC914387F6C0025313C /* XMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC814387F6C0025313C /* XMLManager.m */; };
+		FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACB14387FC20025313C /* UserDelegater.m */; };
+		FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACE14387FE40025313C /* FlowDelegater.m */; };
 		FEBFBEFF1436DAF20028630E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBEFE1436DAF20028630E /* UIKit.framework */; };
 		FEBFBF011436DAF20028630E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF001436DAF20028630E /* Foundation.framework */; };
 		FEBFBF031436DAF20028630E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBFBF021436DAF20028630E /* CoreGraphics.framework */; };
@@ -56,6 +60,14 @@
 		FE6C8DBA14385AC400DC9784 /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
 		FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
 		FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsViewController.m; sourceTree = "<group>"; };
+		FEA70AC414387F4F0025313C /* TestDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDelegater.h; sourceTree = "<group>"; };
+		FEA70AC514387F4F0025313C /* TestDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDelegater.m; sourceTree = "<group>"; };
+		FEA70AC714387F6C0025313C /* XMLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLManager.h; sourceTree = "<group>"; };
+		FEA70AC814387F6C0025313C /* XMLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLManager.m; sourceTree = "<group>"; };
+		FEA70ACA14387FC20025313C /* UserDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegater.h; sourceTree = "<group>"; };
+		FEA70ACB14387FC20025313C /* UserDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegater.m; sourceTree = "<group>"; };
+		FEA70ACD14387FE40025313C /* FlowDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDelegater.h; sourceTree = "<group>"; };
+		FEA70ACE14387FE40025313C /* FlowDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowDelegater.m; sourceTree = "<group>"; };
 		FEBFBEFA1436DAF20028630E /* Wordsss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordsss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBFBEFE1436DAF20028630E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEBFBF001436DAF20028630E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +135,8 @@
 		FE3FF9AC14384DF400687C80 /* XMLManager */ = {
 			isa = PBXGroup;
 			children = (
+				FEA70AC714387F6C0025313C /* XMLManager.h */,
+				FEA70AC814387F6C0025313C /* XMLManager.m */,
 			);
 			name = XMLManager;
 			sourceTree = "<group>";
@@ -158,6 +172,19 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FEA70AC214387D0E0025313C /* ActorDelegater */ = {
+			isa = PBXGroup;
+			children = (
+				FEA70AC414387F4F0025313C /* TestDelegater.h */,
+				FEA70AC514387F4F0025313C /* TestDelegater.m */,
+				FEA70ACA14387FC20025313C /* UserDelegater.h */,
+				FEA70ACB14387FC20025313C /* UserDelegater.m */,
+				FEA70ACD14387FE40025313C /* FlowDelegater.h */,
+				FEA70ACE14387FE40025313C /* FlowDelegater.m */,
+			);
+			name = ActorDelegater;
 			sourceTree = "<group>";
 		};
 		FEBFBEEF1436DAF20028630E = {
@@ -197,6 +224,7 @@
 				FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */,
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
 				FEE37BB814370F7F00A0E6AC /* Scene */,
+				FEA70AC214387D0E0025313C /* ActorDelegater */,
 				FE6C8DF31438735500DC9784 /* Model */,
 				FE3FF9AD14384E1500687C80 /* DataManager */,
 				FE2720941436DCA100CC45FC /* Data */,
@@ -378,6 +406,10 @@
 				FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */,
 				FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */,
 				FE6C8DBE14385ACE00DC9784 /* ListsViewController.m in Sources */,
+				FEA70AC614387F4F0025313C /* TestDelegater.m in Sources */,
+				FEA70AC914387F6C0025313C /* XMLManager.m in Sources */,
+				FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */,
+				FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
