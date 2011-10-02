@@ -24,6 +24,11 @@
 		FEBFBF281436DAF20028630E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF261436DAF20028630E /* InfoPlist.strings */; };
 		FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF291436DAF20028630E /* WordsssTests.h */; };
 		FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF2B1436DAF20028630E /* WordsssTests.m */; };
+		FEE053D5143798620068CDEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053D4143798620068CDEC /* Icon.png */; };
+		FEE053D71437987A0068CDEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053D61437987A0068CDEC /* Icon.png */; };
+		FEE053DC14379ACD0068CDEC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DA14379ACD0068CDEC /* Background.png */; };
+		FEE053DD14379ACD0068CDEC /* Launch Images 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */; };
+		FEE053DF14379ADC0068CDEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DE14379ADC0068CDEC /* Default@2x.png */; };
 		FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7614370C0700A0E6AC /* ProfileViewController.m */; };
 		FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7A14370C1500A0E6AC /* RootViewController.m */; };
 		FEE37BB714370F7600A0E6AC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37BB614370F7600A0E6AC /* TestViewController.m */; };
@@ -59,6 +64,11 @@
 		FEBFBF271436DAF20028630E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEBFBF291436DAF20028630E /* WordsssTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssTests.h; sourceTree = "<group>"; };
 		FEBFBF2B1436DAF20028630E /* WordsssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssTests.m; sourceTree = "<group>"; };
+		FEE053D4143798620068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FEE053D61437987A0068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FEE053DA14379ACD0068CDEC /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch Images 2x.png"; sourceTree = "<group>"; };
+		FEE053DE14379ADC0068CDEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FEE37B7514370C0700A0E6AC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		FEE37B7614370C0700A0E6AC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		FEE37B7914370C1500A0E6AC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -105,6 +115,8 @@
 		FEBFBEEF1436DAF20028630E = {
 			isa = PBXGroup;
 			children = (
+				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
+				FEE053D61437987A0068CDEC /* Icon.png */,
 				FEBFBF061436DAF20028630E /* Wordsss */,
 				FEBFBF231436DAF20028630E /* WordsssTests */,
 				FEBFBEFD1436DAF20028630E /* Frameworks */,
@@ -136,6 +148,7 @@
 		FEBFBF061436DAF20028630E /* Wordsss */ = {
 			isa = PBXGroup;
 			children = (
+				FEE053D2143798490068CDEC /* Resources */,
 				FE2720941436DCA100CC45FC /* Data */,
 				FEBFBF0F1436DAF20028630E /* WordsssAppDelegate.h */,
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
@@ -176,6 +189,16 @@
 				FEBFBF261436DAF20028630E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEE053D2143798490068CDEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEE053DA14379ACD0068CDEC /* Background.png */,
+				FEE053DB14379ACD0068CDEC /* Launch Images 2x.png */,
+				FEE053D4143798620068CDEC /* Icon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FEE37BB814370F7F00A0E6AC /* 5 Main Scenes */ = {
@@ -261,6 +284,11 @@
 			files = (
 				FEBFBF0B1436DAF20028630E /* InfoPlist.strings in Resources */,
 				FE4F6D971437073200409C80 /* MainStoryboard.storyboard in Resources */,
+				FEE053D5143798620068CDEC /* Icon.png in Resources */,
+				FEE053D71437987A0068CDEC /* Icon.png in Resources */,
+				FEE053DC14379ACD0068CDEC /* Background.png in Resources */,
+				FEE053DD14379ACD0068CDEC /* Launch Images 2x.png in Resources */,
+				FEE053DF14379ADC0068CDEC /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
