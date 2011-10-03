@@ -2,12 +2,13 @@
 //  RootViewController.h
 //  Wordsss
 //
-//  Created by Ren Kelvin on 10/1/11.
-//  Copyright 2011 Ren Inc. All rights reserved.
+//  Created by RenKelvin on 11-10-3.
+//  Copyright 2011年 Ren Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITabBarController
+@interface RootViewController : UIViewController
 
+- (void)didSelectItem:(UIView *)sender;
 @end
