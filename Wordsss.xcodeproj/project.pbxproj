@@ -38,6 +38,8 @@
 		FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7614370C0700A0E6AC /* ProfileViewController.m */; };
 		FEE37B7B14370C1500A0E6AC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7A14370C1500A0E6AC /* RootViewController.m */; };
 		FEE37BB714370F7600A0E6AC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37BB614370F7600A0E6AC /* TestViewController.m */; };
+		FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31181439CB1B001F7E90 /* SettingViewController.m */; };
+		FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE311E1439CB85001F7E90 /* ExploreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		FEE37B7A14370C1500A0E6AC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FEE37BB514370F7600A0E6AC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		FEE37BB614370F7600A0E6AC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FEEE31171439CB1B001F7E90 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FEEE31181439CB1B001F7E90 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FEEE311D1439CB85001F7E90 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		FEEE311E1439CB85001F7E90 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +161,14 @@
 			children = (
 				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
 				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
-				FEE37BB514370F7600A0E6AC /* TestViewController.h */,
-				FEE37BB614370F7600A0E6AC /* TestViewController.m */,
+				FEEE311D1439CB85001F7E90 /* ExploreViewController.h */,
+				FEEE311E1439CB85001F7E90 /* ExploreViewController.m */,
 				FE6C8DB614385AAD00DC9784 /* TodayViewController.h */,
 				FE6C8DB714385AAD00DC9784 /* TodayViewController.m */,
-				FE6C8DB914385AC400DC9784 /* BooksViewController.h */,
-				FE6C8DBA14385AC400DC9784 /* BooksViewController.m */,
 				FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */,
 				FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */,
+				FEEE31171439CB1B001F7E90 /* SettingViewController.h */,
+				FEEE31181439CB1B001F7E90 /* SettingViewController.m */,
 			);
 			name = "5 Main";
 			sourceTree = "<group>";
@@ -268,9 +274,9 @@
 		FEE053D2143798490068CDEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
-				FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */,
 				FEE053D61437987A0068CDEC /* Icon.png */,
+				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
+				FEEE31251439D39C001F7E90 /* ProfileView */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -282,8 +288,28 @@
 				FEE37B7914370C1500A0E6AC /* RootViewController.h */,
 				FEE37B7A14370C1500A0E6AC /* RootViewController.m */,
 				FE6C8DBF14385AD900DC9784 /* 5 Main */,
+				FEEE31201439CB92001F7E90 /* Legacy */,
 			);
 			name = Scene;
+			sourceTree = "<group>";
+		};
+		FEEE31201439CB92001F7E90 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				FE6C8DB914385AC400DC9784 /* BooksViewController.h */,
+				FE6C8DBA14385AC400DC9784 /* BooksViewController.m */,
+				FEE37BB514370F7600A0E6AC /* TestViewController.h */,
+				FEE37BB614370F7600A0E6AC /* TestViewController.m */,
+			);
+			name = Legacy;
+			sourceTree = "<group>";
+		};
+		FEEE31251439D39C001F7E90 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */,
+			);
+			name = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +436,8 @@
 				FEA70AC914387F6C0025313C /* XMLManager.m in Sources */,
 				FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */,
 				FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */,
+				FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */,
+				FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
