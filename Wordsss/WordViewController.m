@@ -1,15 +1,14 @@
 //
-//  TodayViewController.m
+//  WordViewController.m
 //  Wordsss
 //
-//  Created by RenKelvin on 11-10-2.
+//  Created by RenKelvin on 11-10-4.
 //  Copyright 2011年 Ren Inc. All rights reserved.
 //
 
-#import "TodayViewController.h"
 #import "WordViewController.h"
 
-@implementation TodayViewController
+@implementation WordViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,15 +36,13 @@
 }
 */
 
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //
-//    WordViewController* wordViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"];
-//    [[self navigationController] pushViewController:wordViewController animated:YES];
 }
+*/
 
 - (void)viewDidUnload
 {

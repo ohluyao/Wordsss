@@ -30,10 +30,10 @@ static BOOL FIRSTTIME = YES;
     
     //
     CGRect tabBarFrame = CGRectMake(0, 480 - 62, 320, 62);
-	cusTomTabBarView = [[UIView alloc] initWithFrame:tabBarFrame];
+	customTabBarView = [[UIView alloc] initWithFrame:tabBarFrame];
 	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 62)];
 	backGroundImageView.image = [UIImage imageNamed:@"tab_bar_bg.png"];
-	[cusTomTabBarView addSubview:backGroundImageView];
+	[customTabBarView addSubview:backGroundImageView];
 	
 	// Create buttons
 	int viewCount = self.viewControllers.count;
@@ -46,62 +46,69 @@ static BOOL FIRSTTIME = YES;
         {
             case 0:
             {
-                btn.frame = CGRectMake(32 - 25, 62 - 49, 50, 49);
-                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
-                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                btn.frame = CGRectMake(32 - 25, 62 - 49, 50, 48);
+                [btn setImage:[UIImage imageNamed:@"profile.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"profile_active.png"] forState:UIControlStateSelected];
                 break;
             }
             case 1:
             {
-                btn.frame = CGRectMake(96 - 25, 62 - 49, 50, 49);
-                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
-                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                btn.frame = CGRectMake(96 - 25, 62 - 49, 50, 48);
+                [btn setImage:[UIImage imageNamed:@"search.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"search_active.png"] forState:UIControlStateSelected];
                 break;
             }
             case 2:
             {
                 btn.frame = CGRectMake(160 - 25, 31 - 23, 50, 50);
                 [btn setImage:[UIImage imageNamed:@"tab_wordtoday.png"] forState:UIControlStateNormal];
-                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                [btn setImage:[UIImage imageNamed:@"nothing.png"] forState:UIControlStateHighlighted];
                 break;
             }
             case 3:
             {
-                btn.frame = CGRectMake(224 - 25, 62 - 49, 50, 49);
-                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
-                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                btn.frame = CGRectMake(224 - 25, 62 - 49, 50, 48);
+                [btn setImage:[UIImage imageNamed:@"wordlist.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"wordlist_active.png"] forState:UIControlStateSelected];
                 break;
             }
             case 4:
             {
-                btn.frame = CGRectMake(288 - 25, 62 - 49, 50, 49);
-                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
-                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                btn.frame = CGRectMake(288 - 25, 62 - 49, 50, 48);
+                [btn setImage:[UIImage imageNamed:@"settings.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"settings_active.png"] forState:UIControlStateSelected];
                 break;
             }
         }
 		
 		[self.buttons addObject:btn];
-		[cusTomTabBarView addSubview:btn];
+		[customTabBarView addSubview:btn];
 	}
     
-	[self.view addSubview:cusTomTabBarView];
+	[self.view addSubview:customTabBarView];
 }
 
 // 
 - (void)selectedTab:(UIButton *)button{
-    //	if (self.currentSelectedIndex == button.tag) {
-    //        [[self.viewControllers objectAtIndex:button.tag] popToRootViewControllerAnimated:YES];
-    //        return;
-    //	}
+    //
+//    	if (self.currentSelectedIndex == button.tag) {
+//            [[self.viewControllers objectAtIndex:button.tag] popToRootViewControllerAnimated:YES];
+//            return;
+//    	}
         
+    // Change selected
 	self.currentSelectedIndex = button.tag;
 	self.selectedIndex = self.currentSelectedIndex;
-    
     // button.tag==4时似乎系统有bug，用下面的方法折衷
     if (button.tag == 4) {
         self.selectedViewController = [self.viewControllers lastObject];
     }
+    
+    // Change image
+    for (UIButton* btn in [self buttons]) {
+        [btn setSelected:NO];
+    }
+    [button setSelected:YES];
 }
 
 #pragma - Init
@@ -135,11 +142,16 @@ static BOOL FIRSTTIME = YES;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //
     if (FIRSTTIME) {
         [self hideBuiltinTabBar];
         [self showCustomTabBar];
         FIRSTTIME = NO;
     }
+    
+    //
+    self.selectedIndex = 2;
 }
 
 - (void)viewDidUnload

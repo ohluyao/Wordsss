@@ -1,15 +1,14 @@
 //
-//  TodayViewController.m
+//  TodayNavigationController.m
 //  Wordsss
 //
-//  Created by RenKelvin on 11-10-2.
+//  Created by RenKelvin on 11-10-4.
 //  Copyright 2011年 Ren Inc. All rights reserved.
 //
 
-#import "TodayViewController.h"
-#import "WordViewController.h"
+#import "TodayNavigationController.h"
 
-@implementation TodayViewController
+@implementation TodayNavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,8 +42,8 @@
     [super viewDidLoad];
     
     //
-//    WordViewController* wordViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"];
-//    [[self navigationController] pushViewController:wordViewController animated:YES];
+    //[self hideBuiltinNavigationBar];
+    [self showCustomNavigationBar];
 }
 
 - (void)viewDidUnload
@@ -58,6 +57,31 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma - Custom
+
+//
+- (void)hideBuiltinNavigationBar{
+	for(UIView *view in self.view.subviews){
+		if([view isKindOfClass:[UINavigationBar class]]){
+			view.hidden = YES;
+			break;
+		}
+	}
+}
+
+// 
+- (void)showCustomNavigationBar{
+    
+    //
+    CGRect tabBarFrame = CGRectMake(0, 20, 320, 44);
+	customNavigationbBarView = [[UIView alloc] initWithFrame:tabBarFrame];
+	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+	backGroundImageView.image = [UIImage imageNamed:@"topbar_bg.png"];
+	[customNavigationbBarView addSubview:backGroundImageView];
+
+	[self.view addSubview:customNavigationbBarView];
 }
 
 @end

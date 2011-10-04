@@ -12,11 +12,12 @@
 {
 	int currentSelectedIndex;
         
-	UIView *cusTomTabBarView;
+	UIView *customTabBarView;
 	NSMutableArray *buttons;
 }
 
 @property (nonatomic, assign) int currentSelectedIndex;
+
 @property (nonatomic, retain) NSMutableArray *buttons;
 
 - (void)hideBuiltinTabBar;
