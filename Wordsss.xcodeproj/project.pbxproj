@@ -35,7 +35,7 @@
 		FEA70AC914387F6C0025313C /* XMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC814387F6C0025313C /* XMLManager.m */; };
 		FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACB14387FC20025313C /* UserDelegater.m */; };
 		FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACE14387FE40025313C /* FlowDelegater.m */; };
-		FEB8ED21143B45530097E267 /* TodayNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB8ED20143B45530097E267 /* TodayNavigationController.m */; };
+		FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB8ED20143B45530097E267 /* RkNavigationController.m */; };
 		FEB8ED26143B47420097E267 /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED24143B47420097E267 /* topbar_bg.png */; };
 		FEB8ED27143B47420097E267 /* topbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED25143B47420097E267 /* topbar_bg@2x.png */; };
 		FEB8ED2C143B47C30097E267 /* bg_body.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED28143B47C30097E267 /* bg_body.png */; };
@@ -119,8 +119,8 @@
 		FEA70ACB14387FC20025313C /* UserDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegater.m; sourceTree = "<group>"; };
 		FEA70ACD14387FE40025313C /* FlowDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDelegater.h; sourceTree = "<group>"; };
 		FEA70ACE14387FE40025313C /* FlowDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowDelegater.m; sourceTree = "<group>"; };
-		FEB8ED1F143B45530097E267 /* TodayNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayNavigationController.h; sourceTree = "<group>"; };
-		FEB8ED20143B45530097E267 /* TodayNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayNavigationController.m; sourceTree = "<group>"; };
+		FEB8ED1F143B45530097E267 /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationController.h; sourceTree = "<group>"; };
+		FEB8ED20143B45530097E267 /* RkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RkNavigationController.m; sourceTree = "<group>"; };
 		FEB8ED24143B47420097E267 /* topbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_bg.png; sourceTree = "<group>"; };
 		FEB8ED25143B47420097E267 /* topbar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_bg@2x.png"; sourceTree = "<group>"; };
 		FEB8ED28143B47C30097E267 /* bg_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body.png; sourceTree = "<group>"; };
@@ -246,13 +246,13 @@
 		FE6C8DBF14385AD900DC9784 /* 5 Main */ = {
 			isa = PBXGroup;
 			children = (
+				FEB8ED1F143B45530097E267 /* RKNavigationController.h */,
+				FEB8ED20143B45530097E267 /* RkNavigationController.m */,
 				FEEE31201439CB92001F7E90 /* Legacy */,
 				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
 				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
 				FEEE311D1439CB85001F7E90 /* ExploreViewController.h */,
 				FEEE311E1439CB85001F7E90 /* ExploreViewController.m */,
-				FEB8ED1F143B45530097E267 /* TodayNavigationController.h */,
-				FEB8ED20143B45530097E267 /* TodayNavigationController.m */,
 				FE6C8DB614385AAD00DC9784 /* TodayViewController.h */,
 				FE6C8DB714385AAD00DC9784 /* TodayViewController.m */,
 				FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */,
@@ -581,7 +581,7 @@
 				FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */,
 				FEEE31AD1439F10B001F7E90 /* RootViewController.m in Sources */,
 				FE2E8361143B2FAC004A2C56 /* WordViewController.m in Sources */,
-				FEB8ED21143B45530097E267 /* TodayNavigationController.m in Sources */,
+				FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
