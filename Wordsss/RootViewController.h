@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UITabBarController
+{
+	int currentSelectedIndex;
+        
+	UIView *cusTomTabBarView;
+	NSMutableArray *buttons;
+}
 
-- (void)didSelectItem:(UIView *)sender;
+@property (nonatomic, assign) int currentSelectedIndex;
+@property (nonatomic, retain) NSMutableArray *buttons;
+
+- (void)hideBuiltinTabBar;
+- (void)showCustomTabBar;
+- (void)selectedTab:(UIButton *)button;
+
 @end

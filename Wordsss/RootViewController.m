@@ -10,6 +10,101 @@
 
 @implementation RootViewController
 
+@synthesize currentSelectedIndex;
+@synthesize buttons;
+
+static BOOL FIRSTTIME = YES;
+
+//
+- (void)hideBuiltinTabBar{
+	for(UIView *view in self.view.subviews){
+		if([view isKindOfClass:[UITabBar class]]){
+			view.hidden = YES;
+			break;
+		}
+	}
+}
+
+// 
+- (void)showCustomTabBar{
+    
+    //
+    CGRect tabBarFrame = CGRectMake(0, 480 - 62, 320, 62);
+	cusTomTabBarView = [[UIView alloc] initWithFrame:tabBarFrame];
+	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 62)];
+	backGroundImageView.image = [UIImage imageNamed:@"tab_bar_bg.png"];
+	[cusTomTabBarView addSubview:backGroundImageView];
+	
+	// Create buttons
+	int viewCount = self.viewControllers.count;
+	self.buttons = [NSMutableArray arrayWithCapacity:viewCount];
+	for (int i = 0; i < viewCount; i++) {
+		UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+		btn.tag = i;
+		[btn addTarget:self action:@selector(selectedTab:) forControlEvents:UIControlEventTouchUpInside];
+		switch (i)
+        {
+            case 0:
+            {
+                btn.frame = CGRectMake(32 - 25, 62 - 49, 50, 49);
+                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                break;
+            }
+            case 1:
+            {
+                btn.frame = CGRectMake(96 - 25, 62 - 49, 50, 49);
+                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                break;
+            }
+            case 2:
+            {
+                btn.frame = CGRectMake(160 - 25, 31 - 23, 50, 50);
+                [btn setImage:[UIImage imageNamed:@"tab_wordtoday.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                break;
+            }
+            case 3:
+            {
+                btn.frame = CGRectMake(224 - 25, 62 - 49, 50, 49);
+                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                break;
+            }
+            case 4:
+            {
+                btn.frame = CGRectMake(288 - 25, 62 - 49, 50, 49);
+                [btn setImage:[UIImage imageNamed:@"abc.png"] forState:UIControlStateNormal];
+                [btn setImage:[UIImage imageNamed:@"def.png"] forState:UIControlStateHighlighted];
+                break;
+            }
+        }
+		
+		[self.buttons addObject:btn];
+		[cusTomTabBarView addSubview:btn];
+	}
+    
+	[self.view addSubview:cusTomTabBarView];
+}
+
+// 
+- (void)selectedTab:(UIButton *)button{
+    //	if (self.currentSelectedIndex == button.tag) {
+    //        [[self.viewControllers objectAtIndex:button.tag] popToRootViewControllerAnimated:YES];
+    //        return;
+    //	}
+        
+	self.currentSelectedIndex = button.tag;
+	self.selectedIndex = self.currentSelectedIndex;
+    
+    // button.tag==4时似乎系统有bug，用下面的方法折衷
+    if (button.tag == 4) {
+        self.selectedViewController = [self.viewControllers lastObject];
+    }
+}
+
+#pragma - Init
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,13 +131,16 @@
  }
  */
 
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void)viewDidLoad
- {
- [super viewDidLoad];
- }
- */
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    if (FIRSTTIME) {
+        [self hideBuiltinTabBar];
+        [self showCustomTabBar];
+        FIRSTTIME = NO;
+    }
+}
 
 - (void)viewDidUnload
 {
@@ -55,16 +153,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-#pragma - Select item
-
-/*
- ~~~
- */
-- (IBAction)didSelectItem:(id)sender
-{
-
 }
 
 @end
