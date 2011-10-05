@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RKNavigationView.h"
+
 @interface RKNavigationController : UINavigationController
 {
     UIView *customNavigationbBarView;

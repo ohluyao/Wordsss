@@ -8,20 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RKTabBarView.h"
+
 @interface RootViewController : UITabBarController
 {
-	int currentSelectedIndex;
-        
 	UIView *customTabBarView;
+
+	int currentSelectedIndex;
 	NSMutableArray *buttons;
 }
 
 @property (nonatomic, assign) int currentSelectedIndex;
-
 @property (nonatomic, retain) NSMutableArray *buttons;
 
 - (void)hideBuiltinTabBar;
 - (void)showCustomTabBar;
+
 - (void)selectedTab:(UIButton *)button;
 
 @end

@@ -60,7 +60,7 @@
 }
 
 #pragma - Custom
-
+   
 //
 - (void)hideBuiltinNavigationBar{
 	for(UIView *view in self.view.subviews){
@@ -74,12 +74,13 @@
 // 
 - (void)showCustomNavigationBar{
     
-    //
-    CGRect tabBarFrame = CGRectMake(0, 20, 320, 44);
-	customNavigationbBarView = [[UIView alloc] initWithFrame:tabBarFrame];
-	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-	backGroundImageView.image = [UIImage imageNamed:@"topbar_bg.png"];
-	[customNavigationbBarView addSubview:backGroundImageView];
+    // Create customNavigationView
+    CGRect frame = CGRectMake(0, 20, 320, 44);
+	customNavigationbBarView = [[RKNavigationView alloc] initWithFrame:frame];
+//    customNavigationbBarView = [[UIView alloc] initWithFrame:frame];
+//	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+//	backGroundImageView.image = [UIImage imageNamed:@"topbar_bg.png"];
+//	[customNavigationbBarView addSubview:backGroundImageView];
 
 	[self.view addSubview:customNavigationbBarView];
 }
