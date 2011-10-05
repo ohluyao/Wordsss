@@ -58,29 +58,10 @@
 }
 
 #pragma - IBActions
-- (IBAction)booksSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)memsSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)listsSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)statisticsSectionButtonDown:(id)sender
-{
-    
-}
 
 - (IBAction)selectedSection:(UIButton*)button
 {
-    button.tag;
+    NSLog(@"%d", button.tag);
 }
 
 @end

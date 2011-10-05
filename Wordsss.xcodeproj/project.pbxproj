@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE060C5E143CD7040026228C /* RKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE060C5B143CD7040026228C /* RKTabBarController.m */; };
+		FE060C5F143CD7040026228C /* RKTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE060C5C143CD7040026228C /* RKTabBarController.xib */; };
+		FE060C63143CD78A0026228C /* RkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE060C60143CD78A0026228C /* RkNavigationController.m */; };
+		FE060C64143CD78A0026228C /* RKNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE060C61143CD78A0026228C /* RKNavigationController.xib */; };
 		FE17D58B143B02110067E780 /* tab_wordtoday.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D589143B02110067E780 /* tab_wordtoday.png */; };
 		FE17D58C143B02110067E780 /* tab_wordtoday@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */; };
 		FE2E834F143B289A004A2C56 /* profile_active.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E833F143B2899004A2C56 /* profile_active.png */; };
@@ -36,13 +40,10 @@
 		FEA70AC914387F6C0025313C /* XMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC814387F6C0025313C /* XMLManager.m */; };
 		FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACB14387FC20025313C /* UserDelegater.m */; };
 		FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACE14387FE40025313C /* FlowDelegater.m */; };
-		FEABC539143C785B005AB8C1 /* RKNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEABC538143C785B005AB8C1 /* RKNavigationController.xib */; };
-		FEABC546143C7E13005AB8C1 /* RKTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */; };
 		FEABC54C143C8A2E005AB8C1 /* WordBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */; };
 		FEABC54F143C8A41005AB8C1 /* WordMemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC54E143C8A41005AB8C1 /* WordMemsViewController.m */; };
 		FEABC552143C8A53005AB8C1 /* WordListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC551143C8A53005AB8C1 /* WordListsViewController.m */; };
 		FEABC555143C8A62005AB8C1 /* WordStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC554143C8A62005AB8C1 /* WordStatisticsViewController.m */; };
-		FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB8ED20143B45530097E267 /* RkNavigationController.m */; };
 		FEB8ED26143B47420097E267 /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED24143B47420097E267 /* topbar_bg.png */; };
 		FEB8ED27143B47420097E267 /* topbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED25143B47420097E267 /* topbar_bg@2x.png */; };
 		FEB8ED2C143B47C30097E267 /* bg_body.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED28143B47C30097E267 /* bg_body.png */; };
@@ -73,7 +74,6 @@
 		FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31181439CB1B001F7E90 /* SettingViewController.m */; };
 		FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE311E1439CB85001F7E90 /* ExploreViewController.m */; };
 		FEEE31AA1439DFC2001F7E90 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE31A91439DFC2001F7E90 /* Default.png */; };
-		FEEE31AD1439F10B001F7E90 /* RKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */; };
 		FEEE52BA143AF2AD00187CD6 /* tab_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE52B8143AF2AD00187CD6 /* tab_bar_bg.png */; };
 		FEEE52BB143AF2AD00187CD6 /* tab_bar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE52B9143AF2AD00187CD6 /* tab_bar_bg@2x.png */; };
 /* End PBXBuildFile section */
@@ -89,6 +89,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE060C5B143CD7040026228C /* RKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabBarController.m; sourceTree = "<group>"; };
+		FE060C5C143CD7040026228C /* RKTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTabBarController.xib; sourceTree = "<group>"; };
+		FE060C5D143CD7040026228C /* RKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabBarController.h; sourceTree = "<group>"; };
+		FE060C60143CD78A0026228C /* RkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RkNavigationController.m; sourceTree = "<group>"; };
+		FE060C61143CD78A0026228C /* RKNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNavigationController.xib; sourceTree = "<group>"; };
+		FE060C62143CD78A0026228C /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationController.h; sourceTree = "<group>"; };
 		FE17D589143B02110067E780 /* tab_wordtoday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_wordtoday.png; sourceTree = "<group>"; };
 		FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_wordtoday@2x.png"; sourceTree = "<group>"; };
 		FE2E833F143B2899004A2C56 /* profile_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_active.png; sourceTree = "<group>"; };
@@ -128,8 +134,6 @@
 		FEA70ACB14387FC20025313C /* UserDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegater.m; sourceTree = "<group>"; };
 		FEA70ACD14387FE40025313C /* FlowDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDelegater.h; sourceTree = "<group>"; };
 		FEA70ACE14387FE40025313C /* FlowDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowDelegater.m; sourceTree = "<group>"; };
-		FEABC538143C785B005AB8C1 /* RKNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNavigationController.xib; sourceTree = "<group>"; };
-		FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTabBarController.xib; sourceTree = "<group>"; };
 		FEABC54A143C8A2E005AB8C1 /* WordBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBooksViewController.h; sourceTree = "<group>"; };
 		FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBooksViewController.m; sourceTree = "<group>"; };
 		FEABC54D143C8A41005AB8C1 /* WordMemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordMemsViewController.h; sourceTree = "<group>"; };
@@ -138,8 +142,6 @@
 		FEABC551143C8A53005AB8C1 /* WordListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListsViewController.m; sourceTree = "<group>"; };
 		FEABC553143C8A62005AB8C1 /* WordStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordStatisticsViewController.h; sourceTree = "<group>"; };
 		FEABC554143C8A62005AB8C1 /* WordStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordStatisticsViewController.m; sourceTree = "<group>"; };
-		FEB8ED1F143B45530097E267 /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationController.h; sourceTree = "<group>"; };
-		FEB8ED20143B45530097E267 /* RkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RkNavigationController.m; sourceTree = "<group>"; };
 		FEB8ED24143B47420097E267 /* topbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_bg.png; sourceTree = "<group>"; };
 		FEB8ED25143B47420097E267 /* topbar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_bg@2x.png"; sourceTree = "<group>"; };
 		FEB8ED28143B47C30097E267 /* bg_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body.png; sourceTree = "<group>"; };
@@ -176,8 +178,6 @@
 		FEEE311D1439CB85001F7E90 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		FEEE311E1439CB85001F7E90 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		FEEE31A91439DFC2001F7E90 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		FEEE31AB1439F10B001F7E90 /* RKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabBarController.h; sourceTree = "<group>"; };
-		FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabBarController.m; sourceTree = "<group>"; };
 		FEEE52B8143AF2AD00187CD6 /* tab_bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bar_bg.png; sourceTree = "<group>"; };
 		FEEE52B9143AF2AD00187CD6 /* tab_bar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,9 +267,6 @@
 		FE6C8DBF14385AD900DC9784 /* 5 Main */ = {
 			isa = PBXGroup;
 			children = (
-				FEB8ED1F143B45530097E267 /* RKNavigationController.h */,
-				FEB8ED20143B45530097E267 /* RkNavigationController.m */,
-				FEABC538143C785B005AB8C1 /* RKNavigationController.xib */,
 				FEEE31201439CB92001F7E90 /* Legacy */,
 				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
 				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
@@ -419,9 +416,12 @@
 			isa = PBXGroup;
 			children = (
 				FE7743A51439F9E900BCAA7E /* MainStoryboard.storyboard */,
-				FEEE31AB1439F10B001F7E90 /* RKTabBarController.h */,
-				FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */,
-				FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */,
+				FE060C5D143CD7040026228C /* RKTabBarController.h */,
+				FE060C5B143CD7040026228C /* RKTabBarController.m */,
+				FE060C5C143CD7040026228C /* RKTabBarController.xib */,
+				FE060C62143CD78A0026228C /* RKNavigationController.h */,
+				FE060C60143CD78A0026228C /* RkNavigationController.m */,
+				FE060C61143CD78A0026228C /* RKNavigationController.xib */,
 				FE6C8DBF14385AD900DC9784 /* 5 Main */,
 				FEABC549143C88D6005AB8C1 /* Word Scene */,
 			);
@@ -503,6 +503,7 @@
 		FEBFBEF11436DAF20028630E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Ren Inc.";
 			};
 			buildConfigurationList = FEBFBEF41436DAF20028630E /* Build configuration list for PBXProject "Wordsss" */;
@@ -560,8 +561,8 @@
 				FEB8ED2D143B47C30097E267 /* bg_body@2x.png in Resources */,
 				FEB8ED2E143B47C30097E267 /* bg_deeper.png in Resources */,
 				FEB8ED2F143B47C30097E267 /* bg_deeper@2x.png in Resources */,
-				FEABC539143C785B005AB8C1 /* RKNavigationController.xib in Resources */,
-				FEABC546143C7E13005AB8C1 /* RKTabBarController.xib in Resources */,
+				FE060C5F143CD7040026228C /* RKTabBarController.xib in Resources */,
+				FE060C64143CD78A0026228C /* RKNavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,15 +613,14 @@
 				FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */,
 				FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */,
 				FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */,
-				FEEE31AD1439F10B001F7E90 /* RKTabBarController.m in Sources */,
 				FE2E8361143B2FAC004A2C56 /* WordViewController.m in Sources */,
-				FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */,
 				FEABC54C143C8A2E005AB8C1 /* WordBooksViewController.m in Sources */,
 				FEABC54F143C8A41005AB8C1 /* WordMemsViewController.m in Sources */,
 				FEABC552143C8A53005AB8C1 /* WordListsViewController.m in Sources */,
 				FEABC555143C8A62005AB8C1 /* WordStatisticsViewController.m in Sources */,
-				FEB8ED21143B45530097E267 /* TodayNavigationController.m in Sources */,
 				FE523EB3143C6EEE00B2F4FF /* Word.m in Sources */,
+				FE060C5E143CD7040026228C /* RKTabBarController.m in Sources */,
+				FE060C63143CD78A0026228C /* RkNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +710,7 @@
 		FEBFBF301436DAF20028630E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -717,7 +718,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
 				INFOPLIST_FILE = "Wordsss/Wordsss-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -725,6 +730,7 @@
 		FEBFBF311436DAF20028630E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -732,7 +738,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wordsss/Wordsss-Prefix.pch";
 				INFOPLIST_FILE = "Wordsss/Wordsss-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

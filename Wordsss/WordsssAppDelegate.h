@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "RKTabBarController.h"
+#import "RKNavigationController.h"
 
 @interface WordsssAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,8 +18,6 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-@property (strong, nonatomic) RKTabBarController *rootViewController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

@@ -41,12 +41,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [[self navigationItem] setTitle:@"abc"];
-    
-    //
-    //    WordViewController* wordViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"];
-    //    [[self navigationController] pushViewController:wordViewController animated:YES];
+        
+    // WordViewController* wordViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"];
+    // [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
 - (void)viewDidUnload
