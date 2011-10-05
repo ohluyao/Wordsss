@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface WordViewController : UIViewController
+{
+    NSArray* sectionViewControllers;
+}
+
+- (IBAction)booksSectionButtonDown:(id)sender;
+- (IBAction)memsSectionButtonDown:(id)sender;
+- (IBAction)listsSectionButtonDown:(id)sender;
+- (IBAction)statisticsSectionButtonDown:(id)sender;
+
+- (void)sectionButtonSelectedAtIndex:(NSInteger)index;
 
 @end

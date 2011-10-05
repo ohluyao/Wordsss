@@ -10,6 +10,10 @@
 
 @implementation RKNavigationController
 
+@synthesize leftButton;
+@synthesize titleLabel;
+@synthesize rightButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,11 +34,11 @@
 #pragma mark - View lifecycle
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView
+ {
+ }
+ */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -60,7 +64,7 @@
 }
 
 #pragma - Custom
-   
+
 //
 - (void)hideBuiltinNavigationBar{
 	for(UIView *view in self.view.subviews){
@@ -76,12 +80,9 @@
     
     // Create customNavigationView
     CGRect frame = CGRectMake(0, 20, 320, 44);
-	customNavigationbBarView = [[RKNavigationView alloc] initWithFrame:frame];
-//    customNavigationbBarView = [[UIView alloc] initWithFrame:frame];
-//	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-//	backGroundImageView.image = [UIImage imageNamed:@"topbar_bg.png"];
-//	[customNavigationbBarView addSubview:backGroundImageView];
-
+	customNavigationbBarView = [[[NSBundle mainBundle] loadNibNamed:@"RKNavigationController" owner:self options:nil] lastObject];
+    [customNavigationbBarView setFrame:frame];
+    
 	[self.view addSubview:customNavigationbBarView];
 }
 

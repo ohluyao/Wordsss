@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FE17D58B143B02110067E780 /* tab_wordtoday.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D589143B02110067E780 /* tab_wordtoday.png */; };
 		FE17D58C143B02110067E780 /* tab_wordtoday@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */; };
-		FE2B88B3143C4C050043054F /* RKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B88B2143C4C050043054F /* RKTabBarView.m */; };
-		FE2B88B6143C4CCA0043054F /* RKNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B88B5143C4CCA0043054F /* RKNavigationView.xib */; };
 		FE2E834F143B289A004A2C56 /* profile_active.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E833F143B2899004A2C56 /* profile_active.png */; };
 		FE2E8350143B289A004A2C56 /* profile_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E8340143B2899004A2C56 /* profile_active@2x.png */; };
 		FE2E8351143B289A004A2C56 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E8341143B2899004A2C56 /* profile.png */; };
@@ -37,6 +35,12 @@
 		FEA70AC914387F6C0025313C /* XMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC814387F6C0025313C /* XMLManager.m */; };
 		FEA70ACC14387FC20025313C /* UserDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACB14387FC20025313C /* UserDelegater.m */; };
 		FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70ACE14387FE40025313C /* FlowDelegater.m */; };
+		FEABC539143C785B005AB8C1 /* RKNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEABC538143C785B005AB8C1 /* RKNavigationController.xib */; };
+		FEABC546143C7E13005AB8C1 /* RKTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */; };
+		FEABC54C143C8A2E005AB8C1 /* WordBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */; };
+		FEABC54F143C8A41005AB8C1 /* WordMemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC54E143C8A41005AB8C1 /* WordMemsViewController.m */; };
+		FEABC552143C8A53005AB8C1 /* WordListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC551143C8A53005AB8C1 /* WordListsViewController.m */; };
+		FEABC555143C8A62005AB8C1 /* WordStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABC554143C8A62005AB8C1 /* WordStatisticsViewController.m */; };
 		FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB8ED20143B45530097E267 /* RkNavigationController.m */; };
 		FEB8ED26143B47420097E267 /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED24143B47420097E267 /* topbar_bg.png */; };
 		FEB8ED27143B47420097E267 /* topbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB8ED25143B47420097E267 /* topbar_bg@2x.png */; };
@@ -61,7 +65,6 @@
 		FEBFBF2A1436DAF20028630E /* WordsssTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FEBFBF291436DAF20028630E /* WordsssTests.h */; };
 		FEBFBF2C1436DAF20028630E /* WordsssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFBF2B1436DAF20028630E /* WordsssTests.m */; };
 		FEC5066114383F99008E01C2 /* DefaultProfileImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */; };
-		FEDEDD76143C4B4100BD4A4C /* RKNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEDD75143C4B4000BD4A4C /* RKNavigationView.m */; };
 		FEE053D71437987A0068CDEC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053D61437987A0068CDEC /* Icon.png */; };
 		FEE053DF14379ADC0068CDEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE053DE14379ADC0068CDEC /* Default@2x.png */; };
 		FEE37B7714370C0700A0E6AC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE37B7614370C0700A0E6AC /* ProfileViewController.m */; };
@@ -69,7 +72,7 @@
 		FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31181439CB1B001F7E90 /* SettingViewController.m */; };
 		FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE311E1439CB85001F7E90 /* ExploreViewController.m */; };
 		FEEE31AA1439DFC2001F7E90 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE31A91439DFC2001F7E90 /* Default.png */; };
-		FEEE31AD1439F10B001F7E90 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31AC1439F10B001F7E90 /* RootViewController.m */; };
+		FEEE31AD1439F10B001F7E90 /* RKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */; };
 		FEEE52BA143AF2AD00187CD6 /* tab_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE52B8143AF2AD00187CD6 /* tab_bar_bg.png */; };
 		FEEE52BB143AF2AD00187CD6 /* tab_bar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEE52B9143AF2AD00187CD6 /* tab_bar_bg@2x.png */; };
 /* End PBXBuildFile section */
@@ -87,9 +90,6 @@
 /* Begin PBXFileReference section */
 		FE17D589143B02110067E780 /* tab_wordtoday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_wordtoday.png; sourceTree = "<group>"; };
 		FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_wordtoday@2x.png"; sourceTree = "<group>"; };
-		FE2B88B1143C4C050043054F /* RKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabBarView.h; sourceTree = "<group>"; };
-		FE2B88B2143C4C050043054F /* RKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabBarView.m; sourceTree = "<group>"; };
-		FE2B88B5143C4CCA0043054F /* RKNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNavigationView.xib; sourceTree = "<group>"; };
 		FE2E833F143B2899004A2C56 /* profile_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_active.png; sourceTree = "<group>"; };
 		FE2E8340143B2899004A2C56 /* profile_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_active@2x.png"; sourceTree = "<group>"; };
 		FE2E8341143B2899004A2C56 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
@@ -125,6 +125,16 @@
 		FEA70ACB14387FC20025313C /* UserDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegater.m; sourceTree = "<group>"; };
 		FEA70ACD14387FE40025313C /* FlowDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDelegater.h; sourceTree = "<group>"; };
 		FEA70ACE14387FE40025313C /* FlowDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowDelegater.m; sourceTree = "<group>"; };
+		FEABC538143C785B005AB8C1 /* RKNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKNavigationController.xib; sourceTree = "<group>"; };
+		FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTabBarController.xib; sourceTree = "<group>"; };
+		FEABC54A143C8A2E005AB8C1 /* WordBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBooksViewController.h; sourceTree = "<group>"; };
+		FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBooksViewController.m; sourceTree = "<group>"; };
+		FEABC54D143C8A41005AB8C1 /* WordMemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordMemsViewController.h; sourceTree = "<group>"; };
+		FEABC54E143C8A41005AB8C1 /* WordMemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordMemsViewController.m; sourceTree = "<group>"; };
+		FEABC550143C8A53005AB8C1 /* WordListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordListsViewController.h; sourceTree = "<group>"; };
+		FEABC551143C8A53005AB8C1 /* WordListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListsViewController.m; sourceTree = "<group>"; };
+		FEABC553143C8A62005AB8C1 /* WordStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordStatisticsViewController.h; sourceTree = "<group>"; };
+		FEABC554143C8A62005AB8C1 /* WordStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordStatisticsViewController.m; sourceTree = "<group>"; };
 		FEB8ED1F143B45530097E267 /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationController.h; sourceTree = "<group>"; };
 		FEB8ED20143B45530097E267 /* RkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RkNavigationController.m; sourceTree = "<group>"; };
 		FEB8ED24143B47420097E267 /* topbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_bg.png; sourceTree = "<group>"; };
@@ -152,8 +162,6 @@
 		FEBFBF291436DAF20028630E /* WordsssTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsssTests.h; sourceTree = "<group>"; };
 		FEBFBF2B1436DAF20028630E /* WordsssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsssTests.m; sourceTree = "<group>"; };
 		FEC5066014383F99008E01C2 /* DefaultProfileImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultProfileImage.jpg; sourceTree = "<group>"; };
-		FEDEDD74143C4B4000BD4A4C /* RKNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationView.h; sourceTree = "<group>"; };
-		FEDEDD75143C4B4000BD4A4C /* RKNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNavigationView.m; sourceTree = "<group>"; };
 		FEE053D61437987A0068CDEC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		FEE053DE14379ADC0068CDEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		FEE37B7514370C0700A0E6AC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -165,8 +173,8 @@
 		FEEE311D1439CB85001F7E90 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		FEEE311E1439CB85001F7E90 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		FEEE31A91439DFC2001F7E90 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		FEEE31AB1439F10B001F7E90 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		FEEE31AC1439F10B001F7E90 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FEEE31AB1439F10B001F7E90 /* RKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabBarController.h; sourceTree = "<group>"; };
+		FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabBarController.m; sourceTree = "<group>"; };
 		FEEE52B8143AF2AD00187CD6 /* tab_bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bar_bg.png; sourceTree = "<group>"; };
 		FEEE52B9143AF2AD00187CD6 /* tab_bar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,9 +264,7 @@
 			children = (
 				FEB8ED1F143B45530097E267 /* RKNavigationController.h */,
 				FEB8ED20143B45530097E267 /* RkNavigationController.m */,
-				FEDEDD74143C4B4000BD4A4C /* RKNavigationView.h */,
-				FEDEDD75143C4B4000BD4A4C /* RKNavigationView.m */,
-				FE2B88B5143C4CCA0043054F /* RKNavigationView.xib */,
+				FEABC538143C785B005AB8C1 /* RKNavigationController.xib */,
 				FEEE31201439CB92001F7E90 /* Legacy */,
 				FEE37B7514370C0700A0E6AC /* ProfileViewController.h */,
 				FEE37B7614370C0700A0E6AC /* ProfileViewController.m */,
@@ -292,6 +298,23 @@
 				FEA70ACE14387FE40025313C /* FlowDelegater.m */,
 			);
 			name = ActorDelegater;
+			sourceTree = "<group>";
+		};
+		FEABC549143C88D6005AB8C1 /* Word Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FE2E835F143B2FAC004A2C56 /* WordViewController.h */,
+				FE2E8360143B2FAC004A2C56 /* WordViewController.m */,
+				FEABC54A143C8A2E005AB8C1 /* WordBooksViewController.h */,
+				FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */,
+				FEABC54D143C8A41005AB8C1 /* WordMemsViewController.h */,
+				FEABC54E143C8A41005AB8C1 /* WordMemsViewController.m */,
+				FEABC550143C8A53005AB8C1 /* WordListsViewController.h */,
+				FEABC551143C8A53005AB8C1 /* WordListsViewController.m */,
+				FEABC553143C8A62005AB8C1 /* WordStatisticsViewController.h */,
+				FEABC554143C8A62005AB8C1 /* WordStatisticsViewController.m */,
+			);
+			name = "Word Scene";
 			sourceTree = "<group>";
 		};
 		FEB8ED23143B47200097E267 /* TodayNavigation */ = {
@@ -399,13 +422,11 @@
 			isa = PBXGroup;
 			children = (
 				FE7743A51439F9E900BCAA7E /* MainStoryboard.storyboard */,
-				FEEE31AB1439F10B001F7E90 /* RootViewController.h */,
-				FEEE31AC1439F10B001F7E90 /* RootViewController.m */,
-				FE2B88B1143C4C050043054F /* RKTabBarView.h */,
-				FE2B88B2143C4C050043054F /* RKTabBarView.m */,
+				FEEE31AB1439F10B001F7E90 /* RKTabBarController.h */,
+				FEEE31AC1439F10B001F7E90 /* RKTabBarController.m */,
+				FEABC545143C7E13005AB8C1 /* RKTabBarController.xib */,
 				FE6C8DBF14385AD900DC9784 /* 5 Main */,
-				FE2E835F143B2FAC004A2C56 /* WordViewController.h */,
-				FE2E8360143B2FAC004A2C56 /* WordViewController.m */,
+				FEABC549143C88D6005AB8C1 /* Word Scene */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -542,7 +563,8 @@
 				FEB8ED2D143B47C30097E267 /* bg_body@2x.png in Resources */,
 				FEB8ED2E143B47C30097E267 /* bg_deeper.png in Resources */,
 				FEB8ED2F143B47C30097E267 /* bg_deeper@2x.png in Resources */,
-				FE2B88B6143C4CCA0043054F /* RKNavigationView.xib in Resources */,
+				FEABC539143C785B005AB8C1 /* RKNavigationController.xib in Resources */,
+				FEABC546143C7E13005AB8C1 /* RKTabBarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +615,13 @@
 				FEA70ACF14387FE40025313C /* FlowDelegater.m in Sources */,
 				FEEE311A1439CB1B001F7E90 /* SettingViewController.m in Sources */,
 				FEEE311F1439CB85001F7E90 /* ExploreViewController.m in Sources */,
-				FEEE31AD1439F10B001F7E90 /* RootViewController.m in Sources */,
+				FEEE31AD1439F10B001F7E90 /* RKTabBarController.m in Sources */,
 				FE2E8361143B2FAC004A2C56 /* WordViewController.m in Sources */,
 				FEB8ED21143B45530097E267 /* RkNavigationController.m in Sources */,
-				FEDEDD76143C4B4100BD4A4C /* RKNavigationView.m in Sources */,
-				FE2B88B3143C4C050043054F /* RKTabBarView.m in Sources */,
+				FEABC54C143C8A2E005AB8C1 /* WordBooksViewController.m in Sources */,
+				FEABC54F143C8A41005AB8C1 /* WordMemsViewController.m in Sources */,
+				FEABC552143C8A53005AB8C1 /* WordListsViewController.m in Sources */,
+				FEABC555143C8A62005AB8C1 /* WordStatisticsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

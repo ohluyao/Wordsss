@@ -1,14 +1,14 @@
 //
-//  WordViewController.m
+//  WordMemsViewController.m
 //  Wordsss
 //
-//  Created by RenKelvin on 11-10-4.
-//  Copyright 2011年 Ren Inc. All rights reserved.
+//  Created by Ren Kelvin on 10/5/11.
+//  Copyright 2011 Ren Inc. All rights reserved.
 //
 
-#import "WordViewController.h"
+#import "WordMemsViewController.h"
 
-@implementation WordViewController
+@implementation WordMemsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,32 +55,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-#pragma - IBActions
-- (IBAction)booksSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)memsSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)listsSectionButtonDown:(id)sender
-{
-    [self sectionButtonSelectedAtIndex:0];
-}
-
-- (IBAction)statisticsSectionButtonDown:(id)sender
-{
-    
-}
-
-- (IBAction)selectedSection:(UIButton*)button
-{
-    button.tag;
 }
 
 @end
