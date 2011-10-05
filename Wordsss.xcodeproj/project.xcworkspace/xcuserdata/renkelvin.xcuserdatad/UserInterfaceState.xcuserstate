@@ -1782,7 +1782,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339503611.98337001</real>
+		<real>339503627.01289201</real>
 		<string>{0, 218}</string>
 		<string>{218, 0}</string>
 		<dict>
@@ -3308,7 +3308,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>15</integer>
+					<integer>302</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3320,11 +3320,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>302</integer>
+					<integer>303</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>312</integer>
+					<integer>302</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3351,6 +3351,7 @@
 				</dict>
 			</array>
 		</dict>
+		<true/>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3359,10 +3360,6 @@
 			</dict>
 			<key>NS.keys</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>303</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>304</integer>
@@ -3391,16 +3388,20 @@
 					<key>CF$UID</key>
 					<integer>310</integer>
 				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>311</integer>
+				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>311</integer>
+					<integer>312</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>312</integer>
+					<integer>302</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3420,7 +3421,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>312</integer>
+					<integer>302</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3437,7 +3438,6 @@
 		<string>IDEShowUtilities</string>
 		<string>AssistantEditorsLayout</string>
 		<string>TodayViewController.h</string>
-		<true/>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3495,7 +3495,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>312</integer>
+					<integer>302</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4133,7 +4133,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339503611.98580199</real>
+		<real>339503627.01561898</real>
 		<string>{0, 218}</string>
 		<string>{218, 0}</string>
 		<dict>
@@ -4178,7 +4178,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {760, 698}}</string>
+		<string>{{0, 0}, {760, 746}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4674,7 +4674,7 @@
 			</array>
 		</dict>
 		<string></string>
-		<real>487</real>
+		<real>535</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4839,7 +4839,7 @@
 		<string>IDESCMStatusFilteringEnabled</string>
 		<string>IDESelectedObjects</string>
 		<string>IDEExpandedItemsSet</string>
-		<string>{{0, 0}, {259, 654}}</string>
+		<string>{{0, 0}, {259, 702}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5318,7 +5318,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>307</integer>
+					<integer>308</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5348,7 +5348,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>305</integer>
+					<integer>306</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
