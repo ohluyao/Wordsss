@@ -619,6 +619,8 @@
 				FEABC54F143C8A41005AB8C1 /* WordMemsViewController.m in Sources */,
 				FEABC552143C8A53005AB8C1 /* WordListsViewController.m in Sources */,
 				FEABC555143C8A62005AB8C1 /* WordStatisticsViewController.m in Sources */,
+				FEB8ED21143B45530097E267 /* TodayNavigationController.m in Sources */,
+				FE523EB3143C6EEE00B2F4FF /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
