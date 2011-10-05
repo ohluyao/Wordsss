@@ -1782,7 +1782,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339504063.54348701</real>
+		<real>339504090.263017</real>
 		<string>{0, 218}</string>
 		<string>{218, 0}</string>
 		<dict>
@@ -2230,11 +2230,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>144</integer>
+					<integer>143</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>143</integer>
+					<integer>144</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
@@ -2253,8 +2253,8 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{0, 679}</string>
-		<real>339504063.543607</real>
+		<real>339504090.26335102</real>
+		<string>{34650, 649}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4134,7 +4134,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339504063.54594302</real>
+		<real>339504090.267717</real>
 		<string>{0, 218}</string>
 		<string>{218, 0}</string>
 		<dict>
