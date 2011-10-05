@@ -26,6 +26,7 @@
 		FE2E835D143B289A004A2C56 /* wordlist.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E834D143B289A004A2C56 /* wordlist.png */; };
 		FE2E835E143B289A004A2C56 /* wordlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E834E143B289A004A2C56 /* wordlist@2x.png */; };
 		FE2E8361143B2FAC004A2C56 /* WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2E8360143B2FAC004A2C56 /* WordViewController.m */; };
+		FE523EB3143C6EEE00B2F4FF /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = FE523EB2143C6EEE00B2F4FF /* Word.m */; };
 		FE6C8DB514385A2F00DC9784 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB414385A2F00DC9784 /* UserDataManager.m */; };
 		FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB714385AAD00DC9784 /* TodayViewController.m */; };
 		FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBA14385AC400DC9784 /* BooksViewController.m */; };
@@ -108,6 +109,8 @@
 		FE2E834E143B289A004A2C56 /* wordlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wordlist@2x.png"; sourceTree = "<group>"; };
 		FE2E835F143B2FAC004A2C56 /* WordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordViewController.h; sourceTree = "<group>"; };
 		FE2E8360143B2FAC004A2C56 /* WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewController.m; sourceTree = "<group>"; };
+		FE523EB1143C6EEE00B2F4FF /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		FE523EB2143C6EEE00B2F4FF /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		FE6C8DB314385A2F00DC9784 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
 		FE6C8DB414385A2F00DC9784 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		FE6C8DB614385AAD00DC9784 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -233,12 +236,14 @@
 			name = RootViewController;
 			sourceTree = "<group>";
 		};
-		FE2720941436DCA100CC45FC /* Data */ = {
+		FE2720941436DCA100CC45FC /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
+				FE523EB1143C6EEE00B2F4FF /* Word.h */,
+				FE523EB2143C6EEE00B2F4FF /* Word.m */,
 			);
-			name = Data;
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 		FE3FF9AC14384DF400687C80 /* XMLManager */ = {
@@ -278,13 +283,6 @@
 				FEEE31181439CB1B001F7E90 /* SettingViewController.m */,
 			);
 			name = "5 Main";
-			sourceTree = "<group>";
-		};
-		FE6C8DF31438735500DC9784 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		FEA70AC214387D0E0025313C /* ActorDelegater */ = {
@@ -364,9 +362,8 @@
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
 				FEE37BB814370F7F00A0E6AC /* Scene */,
 				FEA70AC214387D0E0025313C /* ActorDelegater */,
-				FE6C8DF31438735500DC9784 /* Model */,
 				FE3FF9AD14384E1500687C80 /* DataManager */,
-				FE2720941436DCA100CC45FC /* Data */,
+				FE2720941436DCA100CC45FC /* DataModel */,
 				FE3FF9AC14384DF400687C80 /* XMLManager */,
 				FEE053D2143798490068CDEC /* Resources */,
 				FEBFBF071436DAF20028630E /* Supporting Files */,
