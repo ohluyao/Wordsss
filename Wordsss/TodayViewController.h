@@ -12,6 +12,8 @@
 
 @interface TodayViewController : UIViewController <RKNavigationControllerDelegate>
 
+
+
 - (IBAction)wordDetailSelected:(id)sender;
 
 @end
