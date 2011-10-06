@@ -661,8 +661,8 @@
 		FEE053D2143798490068CDEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FE87370E143DDFB8002FDDE8 /* icon@2x.png */,
 				FE87370C143DDFA9002FDDE8 /* icon.png */,
+				FE87370E143DDFB8002FDDE8 /* icon@2x.png */,
 				FEEE31A91439DFC2001F7E90 /* Default.png */,
 				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
 				FE17D587143AFCA90067E780 /* RKTabBar */,
