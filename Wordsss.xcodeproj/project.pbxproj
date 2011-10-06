@@ -329,8 +329,8 @@
 		FE8736E1143DDC7E002FDDE8 /* tableview_cell_arrow_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableview_cell_arrow_dark@2x.png"; sourceTree = "<group>"; };
 		FE8736E2143DDC7E002FDDE8 /* translation_to_wordlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = translation_to_wordlist.png; sourceTree = "<group>"; };
 		FE8736E3143DDC7E002FDDE8 /* translation_to_wordlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "translation_to_wordlist@2x.png"; sourceTree = "<group>"; };
-		FE87370C143DDFA9002FDDE8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		FE87370E143DDFB8002FDDE8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		FE87370C143DDFA9002FDDE8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		FE87370E143DDFB8002FDDE8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 		FE873711143DECCF002FDDE8 /* WordRelationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordRelationsViewController.h; sourceTree = "<group>"; };
 		FE873712143DECCF002FDDE8 /* WordRelationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRelationsViewController.m; sourceTree = "<group>"; };
 		FEA70AC414387F4F0025313C /* TestDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDelegater.h; sourceTree = "<group>"; };
@@ -584,8 +584,6 @@
 		FEBFBEEF1436DAF20028630E = {
 			isa = PBXGroup;
 			children = (
-				FE87370E143DDFB8002FDDE8 /* icon@2x.png */,
-				FE87370C143DDFA9002FDDE8 /* icon.png */,
 				FEBFBF061436DAF20028630E /* Wordsss */,
 				FEBFBF231436DAF20028630E /* WordsssTests */,
 				FEBFBEFD1436DAF20028630E /* Frameworks */,
@@ -663,6 +661,8 @@
 		FEE053D2143798490068CDEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FE87370E143DDFB8002FDDE8 /* icon@2x.png */,
+				FE87370C143DDFA9002FDDE8 /* icon.png */,
 				FEEE31A91439DFC2001F7E90 /* Default.png */,
 				FEE053DE14379ADC0068CDEC /* Default@2x.png */,
 				FE17D587143AFCA90067E780 /* RKTabBar */,
