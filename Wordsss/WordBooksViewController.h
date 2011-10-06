@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WordBooksViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface WordBooksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

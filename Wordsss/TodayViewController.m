@@ -64,4 +64,21 @@
     [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
+#pragma - RKNavigationControllerDelegate
+
+- (void)initNavigationBar:(UILabel*)titleLabel titleImageViewImage:(UIImage*)image leftButton:(UIButton*)leftButton rightButton:(UIButton*)rigntButton
+{
+    
+}
+
+- (void)navigationBarLeftButtonDown
+{
+
+}
+
+- (void)navigationBarRightButtonDown
+{
+
+}
+
 @end

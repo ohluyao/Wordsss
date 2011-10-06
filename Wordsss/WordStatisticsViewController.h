@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WordStatisticsViewController : UIViewController
+@interface WordStatisticsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

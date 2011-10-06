@@ -12,6 +12,7 @@
 
 @synthesize leftButton;
 @synthesize titleLabel;
+@synthesize titleImageView;
 @synthesize rightButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -84,6 +85,55 @@
     [customNavigationbBarView setFrame:frame];
     
 	[self.view addSubview:customNavigationbBarView];
+}
+
+#pragma - 
+
+- (void)setLeftButtonText:(NSString*)text image:(UIImage*)image
+{
+    [self.leftButton setTitle:text forState:UIControlStateNormal];
+    [self.leftButton setBackgroundImage:image forState:UIControlStateNormal];
+}
+
+- (void)setTitleLabelText:(NSString*)text image:(UIImage*)image
+{
+    [self.titleLabel setText:text];
+}
+
+- (void)setTitleImageViewImage:(UIImage*)image
+{
+    [self.titleImageView setImage:image];
+}
+
+- (void)setTitleText:(NSString*)text image:(UIImage*)image
+{
+    [self.titleLabel setText:text];
+    [self.titleImageView setImage:image];
+}
+
+- (void)setRightButtonText:(NSString*)text image:(UIImage*)image
+{
+    [self.rightButton setTitle:text forState:UIControlStateNormal];
+    [self.rightButton setBackgroundImage:image forState:UIControlStateNormal];
+}
+
+#pragma - 
+
+- (IBAction)leftButtonDown:(id)sender
+{
+    // Maybe unsafe? Change it using protocal
+    if([[self topViewController] respondsToSelector:@selector(navigationBarLeftButtonDown)])
+    {
+        [[self topViewController] performSelector:@selector(navigationBarLeftButtonDown)];
+    }
+}
+
+- (IBAction)rigntButtonDown:(id)sender
+{
+    if([[self topViewController] respondsToSelector:@selector(navigationBarRightButtonDown)])
+    {
+        [[self topViewController] performSelector:@selector(navigationBarRightButtonDown)];
+    }
 }
 
 @end

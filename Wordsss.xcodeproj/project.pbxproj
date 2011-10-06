@@ -36,6 +36,7 @@
 		FE6C8DB814385AAD00DC9784 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DB714385AAD00DC9784 /* TodayViewController.m */; };
 		FE6C8DBB14385AC400DC9784 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBA14385AC400DC9784 /* BooksViewController.m */; };
 		FE6C8DBE14385ACE00DC9784 /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */; };
+		FE772DBC143D9CC9004DDA0D /* UIDashBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE772DBB143D9CC9004DDA0D /* UIDashBoard.xib */; };
 		FE7743A61439F9E900BCAA7E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7743A51439F9E900BCAA7E /* MainStoryboard.storyboard */; };
 		FEA70AC614387F4F0025313C /* TestDelegater.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC514387F4F0025313C /* TestDelegater.m */; };
 		FEA70AC914387F6C0025313C /* XMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA70AC814387F6C0025313C /* XMLManager.m */; };
@@ -119,6 +120,7 @@
 		FE2E8360143B2FAC004A2C56 /* WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewController.m; sourceTree = "<group>"; };
 		FE523EB1143C6EEE00B2F4FF /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		FE523EB2143C6EEE00B2F4FF /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		FE5C963D143DD18E00E38250 /* RKNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationControllerDelegate.h; sourceTree = "<group>"; };
 		FE6C8DB314385A2F00DC9784 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
 		FE6C8DB414385A2F00DC9784 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		FE6C8DB614385AAD00DC9784 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		FE6C8DBA14385AC400DC9784 /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
 		FE6C8DBC14385ACE00DC9784 /* ListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
 		FE6C8DBD14385ACE00DC9784 /* ListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsViewController.m; sourceTree = "<group>"; };
+		FE772DBB143D9CC9004DDA0D /* UIDashBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIDashBoard.xib; sourceTree = "<group>"; };
 		FE7743A51439F9E900BCAA7E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FEA70AC414387F4F0025313C /* TestDelegater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDelegater.h; sourceTree = "<group>"; };
 		FEA70AC514387F4F0025313C /* TestDelegater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDelegater.m; sourceTree = "<group>"; };
@@ -419,12 +422,14 @@
 			isa = PBXGroup;
 			children = (
 				FE7743A51439F9E900BCAA7E /* MainStoryboard.storyboard */,
+				FE772DBB143D9CC9004DDA0D /* UIDashBoard.xib */,
 				FE060C5D143CD7040026228C /* RKTabBarController.h */,
 				FE060C5B143CD7040026228C /* RKTabBarController.m */,
 				FE060C5C143CD7040026228C /* RKTabBarController.xib */,
 				FE060C62143CD78A0026228C /* RKNavigationController.h */,
 				FE060C60143CD78A0026228C /* RkNavigationController.m */,
 				FE060C61143CD78A0026228C /* RKNavigationController.xib */,
+				FE5C963D143DD18E00E38250 /* RKNavigationControllerDelegate.h */,
 				FE6C8DBF14385AD900DC9784 /* 5 Main */,
 				FEABC549143C88D6005AB8C1 /* Word Scene */,
 			);
@@ -564,6 +569,7 @@
 				FEB8ED2F143B47C30097E267 /* bg_deeper@2x.png in Resources */,
 				FE060C5F143CD7040026228C /* RKTabBarController.xib in Resources */,
 				FE060C64143CD78A0026228C /* RKNavigationController.xib in Resources */,
+				FE772DBC143D9CC9004DDA0D /* UIDashBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WordMemsViewController : UIViewController
+@interface WordMemsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

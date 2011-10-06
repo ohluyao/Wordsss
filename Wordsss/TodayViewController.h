@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+#import "RKNavigationControllerDelegate.h"
+
+@interface TodayViewController : UIViewController <RKNavigationControllerDelegate>
 
 - (IBAction)wordDetailSelected:(id)sender;
 

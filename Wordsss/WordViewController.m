@@ -98,4 +98,10 @@
     return self;
 }
 
+#pragma - RKNavigationControllerDelegate
+- (void)navigationBarLeftButtonDown
+{
+    [[self navigationController] popViewControllerAnimated:YES];
+}
+
 @end

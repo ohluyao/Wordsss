@@ -15,9 +15,17 @@
 
 @property (nonatomic, retain) IBOutlet UIButton* leftButton;
 @property (nonatomic, retain) IBOutlet UILabel* titleLabel;
+@property (nonatomic, retain) IBOutlet UIImageView* titleImageView;
 @property (nonatomic, retain) IBOutlet UIButton* rightButton;
 
 - (void)hideBuiltinNavigationBar;
 - (void)showCustomNavigationBar;
+
+- (void)setLeftButtonText:(NSString*)text image:(UIImage*)image;
+- (void)setTitleLabelText:(NSString*)text image:(UIImage*)image;
+- (void)setRightButtonText:(NSString*)text image:(UIImage*)image;
+
+- (IBAction)leftButtonDown:(id)sender;
+- (IBAction)rigntButtonDown:(id)sender;
 
 @end
