@@ -57,4 +57,56 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma - UITableViewDelegate
+
+
+
+#pragma - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+// Header
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+     UIView *headerView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 22)];
+        
+    // Background
+    UIImageView* background = [[UIImageView alloc] init];
+    background.image = [UIImage imageNamed:@"topbar_bg.png"];
+    background.frame = CGRectMake(0, 0, 320, 22);
+    [headerView addSubview:background];
+    
+    // TitleLabel
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(12, 0, 320, 22);
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    label.text = @"-----";
+    [headerView addSubview:label];
+    
+    return headerView;
+}
+
+// Section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+// Cell
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* WordBooksTableViewCellIndentifier = @"WordBooksTableViewCell";
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:WordBooksTableViewCellIndentifier];
+    if (cell == nil) {
+        // need [ autorealse]
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:WordBooksTableViewCellIndentifier];
+    }
+    
+    return cell;
+}
+
 @end

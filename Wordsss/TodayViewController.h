@@ -10,6 +10,6 @@
 
 @interface TodayViewController : UIViewController
 
-
+- (IBAction)wordDetailSelected:(id)sender;
 
 @end

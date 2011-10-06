@@ -10,6 +10,8 @@
 
 @implementation WordViewController
 
+@synthesize sectionViewControllers;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,19 +32,19 @@
 #pragma mark - View lifecycle
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView
+ {
+ }
+ */
 
 /*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad
+ {
+ [super viewDidLoad];
+ }
+ */
 
 - (void)viewDidUnload
 {
@@ -57,11 +59,43 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma - IBActions
+#pragma - -
 
-- (IBAction)selectedSection:(UIButton*)button
+- (IBAction)selectSection:(UIButton*)button
 {
     NSLog(@"%d", button.tag);
+    [self selectSectionViewControllerAtIndex:button.tag];
+}
+
+- (void)selectSectionViewControllerAtIndex:(NSInteger)index
+{
+    UIView* sectionView = [[self.sectionViewControllers objectAtIndex:index] view];
+    [self.view addSubview:sectionView];
+}
+
+- (id)initSectionViewControllers
+{
+    WordBooksViewController* wordBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordBooksViewController"];
+    [[wordBooksViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+
+    WordMemsViewController* wordMemsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordMemsViewController"];
+    [[wordMemsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+
+    WordListsViewController* wordListsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordListsViewController"];
+    [[wordListsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+
+    WordStatisticsViewController* wordStatisticsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordStatisticsViewController"];
+    [[wordStatisticsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+
+    NSMutableArray* tempViewControllersArray = [NSMutableArray arrayWithCapacity:4];
+    [tempViewControllersArray addObject:wordBooksViewController];
+    [tempViewControllersArray addObject:wordMemsViewController];
+    [tempViewControllersArray addObject:wordListsViewController];
+    [tempViewControllersArray addObject:wordStatisticsViewController];
+    
+    [self setSectionViewControllers:tempViewControllersArray];
+    
+    return self;
 }
 
 @end

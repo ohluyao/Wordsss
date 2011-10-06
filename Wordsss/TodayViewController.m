@@ -41,9 +41,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
-    // WordViewController* wordViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"];
-    // [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
 - (void)viewDidUnload
@@ -57,6 +54,14 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma -
+
+- (IBAction)wordDetailSelected:(id)sender
+{
+    WordViewController* wordViewController = [[self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"] initSectionViewControllers];
+    [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
 @end

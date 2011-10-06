@@ -11,17 +11,13 @@
 @interface RKTabBarController : UITabBarController
 {
 	UIView *customTabBarView;
-
-	int currentSelectedIndex;
-	NSMutableArray *buttons;
 }
 
-@property (nonatomic, assign) int currentSelectedIndex;
 @property (nonatomic, retain) NSMutableArray *buttons;
 
 - (void)hideBuiltinTabBar;
 - (void)showCustomTabBar;
 
-- (void)selectedTab:(UIButton *)button;
+- (void)selectTab:(UIButton *)button;
 
 @end

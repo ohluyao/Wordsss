@@ -34,8 +34,6 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSMainNibFile</key>
-	<string>RKTabBarController</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryBoard</string>
 	<key>UIStatusBarStyle</key>

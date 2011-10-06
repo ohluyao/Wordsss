@@ -10,7 +10,6 @@
 
 @implementation RKTabBarController
 
-@synthesize currentSelectedIndex;
 @synthesize buttons;
 
 static BOOL FIRSTTIME = YES;
@@ -45,10 +44,10 @@ static BOOL FIRSTTIME = YES;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+    
     //
     if (FIRSTTIME) {
-        [self hideBuiltinTabBar];
+        // [self hideBuiltinTabBar];
         [self showCustomTabBar];
         FIRSTTIME = NO;
     }
@@ -89,19 +88,14 @@ static BOOL FIRSTTIME = YES;
     CGRect tabBarFrame = CGRectMake(0, 480 - 62, 320, 62);    
 	customTabBarView = [[[NSBundle mainBundle] loadNibNamed:@"RKTabBarController" owner:self options:nil] lastObject];
     [customTabBarView setFrame:tabBarFrame];
-    
-    //  customTabBarView = [[UIView alloc] initWithFrame:tabBarFrame];
-    //	UIImageView* backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 62)];
-    //	backGroundImageView.image = [UIImage imageNamed:@"tab_bar_bg.png"];
-    //	[customTabBarView addSubview:backGroundImageView];
-	
+    	
 	// Create buttons
 	int viewCount = self.viewControllers.count;
 	self.buttons = [NSMutableArray arrayWithCapacity:viewCount];
 	for (int i = 0; i < viewCount; i++) {
 		UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 		btn.tag = i;
-		[btn addTarget:self action:@selector(selectedTab:) forControlEvents:UIControlEventTouchUpInside];
+		[btn addTarget:self action:@selector(selectTab:) forControlEvents:UIControlEventTouchUpInside];
 		switch (i)
         {
             case 0:
@@ -149,15 +143,17 @@ static BOOL FIRSTTIME = YES;
 }
 
 // 
-- (void)selectedTab:(UIButton *)button{
+- (void)selectTab:(UIButton *)button
+{
     
-    //    	if (self.currentSelectedIndex == button.tag) {
-    //            [[self.viewControllers objectAtIndex:button.tag] popToRootViewControllerAnimated:YES];
-    //            return;
+    //
+    if (self.selectedIndex == button.tag) {
+        [[self.viewControllers objectAtIndex:button.tag] popToRootViewControllerAnimated:YES];
+        return;
+    }
     
     // Change selected
-	self.currentSelectedIndex = button.tag;
-	self.selectedIndex = self.currentSelectedIndex;
+    self.selectedIndex = button.tag;
     // button.tag==4时似乎系统有bug，用下面的方法折衷
     if (button.tag == 4) {
         self.selectedViewController = [self.viewControllers lastObject];

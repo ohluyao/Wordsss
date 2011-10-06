@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WordViewController : UIViewController
-{
-    NSArray* sectionViewControllers;
-}
+#import "WordBooksViewController.h"
+#import "WordMemsViewController.h"
+#import "WordListsViewController.h"
+#import "WordStatisticsViewController.h"
 
-- (IBAction)selectedSection:(UIButton*)button;
+@interface WordViewController : UIViewController
+
+@property (nonatomic, retain) NSArray* sectionViewControllers;
+
+- (id)initSectionViewControllers;
+
+- (IBAction)selectSection:(UIButton*)button;
+- (void)selectSectionViewControllerAtIndex:(NSInteger)index;
 
 @end
