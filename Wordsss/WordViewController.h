@@ -9,17 +9,23 @@
 #import <UIKit/UIKit.h>
 
 #import "WordBooksViewController.h"
+#import "WordRelationsViewController.h"
 #import "WordMemsViewController.h"
-#import "WordListsViewController.h"
 #import "WordStatisticsViewController.h"
 
 @interface WordViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIButton* wordBooksSectionButton;
+@property (nonatomic, retain) IBOutlet UIButton* wordRelationsSectionButton;
+@property (nonatomic, retain) IBOutlet UIButton* wordMemsSectionButton;
+@property (nonatomic, retain) IBOutlet UIButton* wordStatisticsSectionButton;
+
 @property (nonatomic, retain) NSArray* sectionViewControllers;
+@property (nonatomic, retain) UIView* currentSectionView;
 
 - (id)initSectionViewControllers;
 
-- (IBAction)selectSection:(UIButton*)button;
-- (void)selectSectionViewControllerAtIndex:(NSInteger)index;
+- (IBAction)selectSectionButtonDown:(UIButton*)button;
+- (void)selectSectionWithIndex:(NSInteger)index;
 
 @end

@@ -1,14 +1,14 @@
 //
-//  WordBooksViewController.m
+//  WordRelationsViewController.m
 //  Wordsss
 //
-//  Created by Ren Kelvin on 10/5/11.
-//  Copyright 2011 Ren Inc. All rights reserved.
+//  Created by RenKelvin on 11-10-6.
+//  Copyright 2011年 Ren Inc. All rights reserved.
 //
 
-#import "WordBooksViewController.h"
+#import "WordRelationsViewController.h"
 
-@implementation WordBooksViewController
+@implementation WordRelationsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -74,7 +74,7 @@
     UIView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"UIDashBoard" owner:self options:nil] objectAtIndex:0];
     
     [headerView setBackgroundColor:[UIColor clearColor]];
-
+    
     // TitleLabel
     UILabel *label = [[UILabel alloc] init];
     label.frame = CGRectMake(12, 0, 320, 28);
@@ -94,7 +94,7 @@
 // Cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* WordBooksTableViewCellIndentifier = @"WordBooksTableViewCell";
+    static NSString* WordBooksTableViewCellIndentifier = @"WordRelationsTableViewCell";
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:WordBooksTableViewCellIndentifier];
     if (cell == nil) {
         // need [ autorealse]

@@ -14,7 +14,8 @@
 	<string></string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>Icon.png</string>
+		<string>icon.png</string>
+		<string>icon@2x.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.ren.${PRODUCT_NAME:rfc1034identifier}</string>
@@ -36,6 +37,8 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryBoard</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackTranslucent</string>
 	<key>UISupportedInterfaceOrientations</key>

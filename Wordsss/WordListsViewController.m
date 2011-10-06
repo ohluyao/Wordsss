@@ -73,6 +73,8 @@
 {
     UIView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"UIDashBoard" owner:self options:nil] objectAtIndex:0];
     
+    [headerView setBackgroundColor:[UIColor clearColor]];
+    
     // TitleLabel
     UILabel *label = [[UILabel alloc] init];
     label.frame = CGRectMake(12, 0, 320, 28);
@@ -92,7 +94,7 @@
 // Cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* WordBooksTableViewCellIndentifier = @"WordBooksTableViewCell";
+    static NSString* WordBooksTableViewCellIndentifier = @"WordListsTableViewCell";
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:WordBooksTableViewCellIndentifier];
     if (cell == nil) {
         // need [ autorealse]

@@ -11,6 +11,12 @@
 @implementation WordViewController
 
 @synthesize sectionViewControllers;
+@synthesize currentSectionView;
+
+@synthesize wordBooksSectionButton;
+@synthesize wordRelationsSectionButton;
+@synthesize wordMemsSectionButton;
+@synthesize wordStatisticsSectionButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,13 +44,12 @@
  }
  */
 
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void)viewDidLoad
- {
- [super viewDidLoad];
- }
- */
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self selectSectionWithIndex:0];
+}
 
 - (void)viewDidUnload
 {
@@ -61,15 +66,41 @@
 
 #pragma - -
 
-- (IBAction)selectSection:(UIButton*)button
+- (IBAction)selectSectionButtonDown:(UIButton*)button
 {
-    NSLog(@"%d", button.tag);
-    [self selectSectionViewControllerAtIndex:button.tag];
+    [self selectSectionWithIndex:button.tag];
 }
 
-- (void)selectSectionViewControllerAtIndex:(NSInteger)index
+- (void)selectSectionWithIndex:(NSInteger)index
 {
+    // Change buttons
+    [self.wordBooksSectionButton setSelected:NO];
+    [self.wordRelationsSectionButton setSelected:NO];
+    [self.wordMemsSectionButton setSelected:NO];
+    [self.wordStatisticsSectionButton setSelected:NO];
+    switch (index) {
+        case 0:
+            [self.wordBooksSectionButton setSelected:YES];
+            break;
+        case 1:
+            [self.wordRelationsSectionButton setSelected:YES];
+            break;
+        case 2:
+            [self.wordMemsSectionButton setSelected:YES];
+            break;
+        case 3:
+            [self.wordStatisticsSectionButton setSelected:YES];
+            break;            
+        default:
+            break;
+    }
+    
+    // Remove old view
+    [self.currentSectionView removeFromSuperview];
+    
+    // Add new view
     UIView* sectionView = [[self.sectionViewControllers objectAtIndex:index] view];
+    self.currentSectionView = sectionView;
     [self.view addSubview:sectionView];
 }
 
@@ -77,20 +108,20 @@
 {
     WordBooksViewController* wordBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordBooksViewController"];
     [[wordBooksViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
-
+    
+    WordRelationsViewController* wordRelationsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordRelationsViewController"];
+    [[wordRelationsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+    
     WordMemsViewController* wordMemsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordMemsViewController"];
     [[wordMemsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
-
-    WordListsViewController* wordListsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordListsViewController"];
-    [[wordListsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
-
+    
     WordStatisticsViewController* wordStatisticsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordStatisticsViewController"];
     [[wordStatisticsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
-
+    
     NSMutableArray* tempViewControllersArray = [NSMutableArray arrayWithCapacity:4];
     [tempViewControllersArray addObject:wordBooksViewController];
+    [tempViewControllersArray addObject:wordRelationsViewController];
     [tempViewControllersArray addObject:wordMemsViewController];
-    [tempViewControllersArray addObject:wordListsViewController];
     [tempViewControllersArray addObject:wordStatisticsViewController];
     
     [self setSectionViewControllers:tempViewControllersArray];
@@ -99,6 +130,7 @@
 }
 
 #pragma - RKNavigationControllerDelegate
+
 - (void)navigationBarLeftButtonDown
 {
     [[self navigationController] popViewControllerAnimated:YES];
