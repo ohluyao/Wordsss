@@ -439,14 +439,14 @@
 			name = RKTabBar;
 			sourceTree = "<group>";
 		};
-		FE2720941436DCA100CC45FC /* DataModel */ = {
+		FE2720941436DCA100CC45FC /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
 				FE523EB1143C6EEE00B2F4FF /* Word.h */,
 				FE523EB2143C6EEE00B2F4FF /* Word.m */,
 			);
-			name = DataModel;
+			name = Data;
 			sourceTree = "<group>";
 		};
 		FE3FF9AC14384DF400687C80 /* XMLManager */ = {
@@ -488,8 +488,6 @@
 		FE8736BF143DDC53002FDDE8 /* WordView */ = {
 			isa = PBXGroup;
 			children = (
-				FE8736C0143DDC7E002FDDE8 /* button_back.png */,
-				FE8736C1143DDC7E002FDDE8 /* button_back@2x.png */,
 				FE8736C2143DDC7E002FDDE8 /* info_cet4.png */,
 				FE8736C3143DDC7E002FDDE8 /* info_cet4@2x.png */,
 				FE8736C4143DDC7E002FDDE8 /* info_cet6.png */,
@@ -573,8 +571,12 @@
 		FEB8ED23143B47200097E267 /* RKNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				FE8736C0143DDC7E002FDDE8 /* button_back.png */,
+				FE8736C1143DDC7E002FDDE8 /* button_back@2x.png */,
 				FEB8ED24143B47420097E267 /* topbar_bg.png */,
 				FEB8ED25143B47420097E267 /* topbar_bg@2x.png */,
+				FE8736A7143DDC3E002FDDE8 /* button_info.png */,
+				FE8736A8143DDC3E002FDDE8 /* button_info@2x.png */,
 			);
 			name = RKNavigation;
 			sourceTree = "<group>";
@@ -618,7 +620,7 @@
 				FEE37BB814370F7F00A0E6AC /* Scene */,
 				FEA70AC214387D0E0025313C /* ActorDelegater */,
 				FE3FF9AD14384E1500687C80 /* DataManager */,
-				FE2720941436DCA100CC45FC /* DataModel */,
+				FE2720941436DCA100CC45FC /* Data */,
 				FE3FF9AC14384DF400687C80 /* XMLManager */,
 				FEE053D2143798490068CDEC /* Resources */,
 				FEBFBF071436DAF20028630E /* Supporting Files */,
@@ -760,8 +762,6 @@
 		FEEE31A41439DF61001F7E90 /* TodayView */ = {
 			isa = PBXGroup;
 			children = (
-				FE8736A7143DDC3E002FDDE8 /* button_info.png */,
-				FE8736A8143DDC3E002FDDE8 /* button_info@2x.png */,
 				FE8736A9143DDC3E002FDDE8 /* next_word_bg.png */,
 				FE8736AA143DDC3E002FDDE8 /* next_word_bg@2x.png */,
 				FE8736AB143DDC3E002FDDE8 /* pre_word_translation_bg.png */,

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RKNavigationController : UINavigationController
+@interface RKNavigationController : UINavigationController <UINavigationControllerDelegate>
 {
     UIView *customNavigationbBarView;
 }

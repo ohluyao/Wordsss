@@ -48,14 +48,16 @@
 {
     [super viewDidLoad];
     
+    //
+    [self initNavigationBar:(RKNavigationController*)[self navigationController]];
+
+    //
     [self selectSectionWithIndex:0];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -131,9 +133,23 @@
 
 #pragma - RKNavigationControllerDelegate
 
+- (void)initNavigationBar:(RKNavigationController*)navigationController
+{
+    [[navigationController titleLabel] setText:@"apple"];
+    [[navigationController titleImageView] setImage:nil];
+    [[navigationController leftButton] setImage:[UIImage imageNamed:@"button_back.png"] forState:UIControlStateNormal];
+    [[navigationController rightButton] setImage:[UIImage imageNamed:@"info_gre.png"] forState:UIControlStateNormal];
+}
+
 - (void)navigationBarLeftButtonDown
 {
     [[self navigationController] popViewControllerAnimated:YES];
+    [[[self navigationController] topViewController] performSelector:@selector(initNavigationBar) withObject:[[self navigationController] topViewController]];
+}
+
+- (void)navigationBarRightButtonDown
+{
+    
 }
 
 @end

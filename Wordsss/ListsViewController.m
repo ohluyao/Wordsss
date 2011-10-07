@@ -57,31 +57,57 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark -
-#pragma mark Table view data source methods
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-     
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-    
-	return cell;
-}
-
-
 /**
  Handle deletion of an event.
  */
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+
+#pragma - UITableViewDelegate
+
+
+
+#pragma - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+// Header
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"UIDashBoard" owner:self options:nil] objectAtIndex:0];
+    
+    [headerView setBackgroundColor:[UIColor clearColor]];
+    
+    // TitleLabel
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(12, 0, 320, 28);
+    label.backgroundColor = [UIColor clearColor];
+    label.text = @"-----";
+    [headerView addSubview:label];
+    
+    return headerView;
+}
+
+// Section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+// Cell
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* WordBooksTableViewCellIndentifier = @"ListsTableViewCell";
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:WordBooksTableViewCellIndentifier];
+    if (cell == nil) {
+        // need [ autorealse]
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:WordBooksTableViewCellIndentifier];
+    }
+    
+    return cell;
 }
 
 @end

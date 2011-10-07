@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RKNavigationController.h"
+
 @protocol RKNavigationControllerDelegate <NSObject>
+
+- (void)initNavigationBar:(RKNavigationController*)navigationController;
 
 - (void)navigationBarLeftButtonDown;
 - (void)navigationBarRightButtonDown;
-
-- (void)initNavigationBar:(UILabel*)titleLabel titleImageViewImage:(UIImage*)image leftButton:(UIButton*)leftButton rightButton:(UIButton*)rigntButton;
 
 @end

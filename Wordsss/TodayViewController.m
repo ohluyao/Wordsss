@@ -41,6 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self initNavigationBar:(RKNavigationController*)[self navigationController]];
 }
 
 - (void)viewDidUnload
@@ -61,14 +63,20 @@
 - (IBAction)wordDetailSelected:(id)sender
 {
     WordViewController* wordViewController = [[self.storyboard instantiateViewControllerWithIdentifier:@"WordViewController"] initSectionViewControllers];
+    
     [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
 #pragma - RKNavigationControllerDelegate
 
-- (void)initNavigationBar:(UILabel*)titleLabel titleImageViewImage:(UIImage*)image leftButton:(UIButton*)leftButton rightButton:(UIButton*)rigntButton
+- (void)initNavigationBar:(RKNavigationController*)navigationController
 {
+//    [[self navigationController] setDelegate:self];
     
+    [[navigationController titleLabel] setText:@""];
+    [[navigationController titleImageView] setImage:[UIImage imageNamed:@"title_small.png"]];
+    [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
+    [[navigationController rightButton] setImage:[UIImage imageNamed:@"button_info.png"] forState:UIControlStateNormal];
 }
 
 - (void)navigationBarLeftButtonDown
@@ -80,5 +88,12 @@
 {
 
 }
+
+//#pragma - UINavigatinoControllerDelegate
+//
+//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    NSLog(@"1");
+//}
 
 @end

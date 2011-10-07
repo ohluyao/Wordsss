@@ -136,4 +136,12 @@
     }
 }
 
+
+#pragma - UINavigationControllerDelegate
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [navigationController performSelector:@selector(initNavigationBar) withObject:viewController];
+}
+
 @end

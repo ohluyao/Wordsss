@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExploreViewController : UIViewController
+@interface ExploreViewController : UIViewController <UITabBarDelegate, UITableViewDataSource>
    
 
 
