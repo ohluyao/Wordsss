@@ -11,6 +11,9 @@
 
 @implementation TodayViewController
 
+@synthesize wordSliderImageView;
+@synthesize wordSliderTouchArea;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,7 +45,12 @@
 {
     [super viewDidLoad];
     
-    [self initNavigationBar:(RKNavigationController*)[self navigationController]];
+    //
+    [[self navigationController] setDelegate:self];
+    
+    //
+    UIPanGestureRecognizer* recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wordSliderPanning:)];
+    [[self wordSliderTouchArea] addGestureRecognizer:recognizer];
 }
 
 - (void)viewDidUnload
@@ -67,10 +75,45 @@
     [[self navigationController] pushViewController:wordViewController animated:YES];
 }
 
+#pragma -
+
+- (void)wordSliderPanning:(UIPanGestureRecognizer*)recognizer
+{
+    CGPoint translation = [recognizer translationInView:self.view];
+    CGRect rect = [self.wordSliderImageView frame];
+    
+    if (recognizer.state == UIGestureRecognizerStateChanged)
+    {
+        rect.origin.x += translation.x;
+        if(rect.origin.x > 0 && rect.origin.x < 84)
+            [self.wordSliderImageView setFrame:rect];
+        
+        [recognizer setTranslation:CGPointZero inView:self.view];
+    }
+    else if(recognizer.state == UIGestureRecognizerStateEnded) 
+    {
+        if(rect.origin.x < 21)
+        {
+            rect.origin.x = 0;
+        }
+        else if(rect.origin.x > 63)
+        {
+            rect.origin.x = 84;
+        }
+        else 
+        {
+            rect.origin.x = 42;
+        }
+        [self.wordSliderImageView setFrame:rect];
+    }
+}
+
 #pragma - RKNavigationControllerDelegate
 
 - (void)initNavigationBar:(RKNavigationController*)navigationController
 {    
+    [[self navigationController] setDelegate:self];
+    
     [[navigationController titleLabel] setText:@""];
     [[navigationController titleImageView] setImage:[UIImage imageNamed:@"title_small.png"]];
     [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];

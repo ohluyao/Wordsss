@@ -135,6 +135,8 @@
 
 - (void)initNavigationBar:(RKNavigationController*)navigationController
 {
+    [[self navigationController] setDelegate:self];
+    
     [[navigationController titleLabel] setText:@"apple"];
     [[navigationController titleImageView] setImage:nil];
     [[navigationController leftButton] setImage:[UIImage imageNamed:@"button_back.png"] forState:UIControlStateNormal];
@@ -144,7 +146,6 @@
 - (void)navigationBarLeftButtonDown
 {
     [[self navigationController] popViewControllerAnimated:YES];
-    [[[self navigationController] topViewController] performSelector:@selector(initNavigationBar) withObject:[[self navigationController] topViewController]];
 }
 
 - (void)navigationBarRightButtonDown

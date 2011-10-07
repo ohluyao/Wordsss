@@ -15,7 +15,7 @@
 
 #import "RKNavigationControllerDelegate.h"
 
-@interface WordViewController : UIViewController <RKNavigationControllerDelegate>
+@interface WordViewController : UIViewController <RKNavigationControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UIButton* wordBooksSectionButton;
 @property (nonatomic, retain) IBOutlet UIButton* wordRelationsSectionButton;
