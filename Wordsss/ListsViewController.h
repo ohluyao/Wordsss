@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import "RKNavigationController.h"
+#import "RKNavigationControllerDelegate.h"
+
+@interface ListsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, RKNavigationControllerDelegate>
 
 @end

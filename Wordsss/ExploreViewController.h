@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExploreViewController : UIViewController <UITabBarDelegate, UITableViewDataSource>
-   
+#import "RKNavigationController.h"
+#import "RKNavigationControllerDelegate.h"
 
+@interface ExploreViewController : UIViewController <UITabBarDelegate, UITableViewDataSource, RKNavigationControllerDelegate>
 
 @end

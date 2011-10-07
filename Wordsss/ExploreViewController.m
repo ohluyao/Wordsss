@@ -36,13 +36,13 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self initNavigationBar:(RKNavigationController*)[self navigationController]];
 }
-*/
 
 - (void)viewDidUnload
 {
@@ -102,6 +102,26 @@
     }
     
     return cell;
+}
+
+#pragma - RKNavigationControllerDelegate
+
+- (void)initNavigationBar:(RKNavigationController*)navigationController
+{    
+    [[navigationController titleLabel] setText:@"Explore"];
+    [[navigationController titleImageView] setImage:nil];
+    [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
+    [[navigationController rightButton] setImage:nil forState:UIControlStateNormal];
+}
+
+- (void)navigationBarLeftButtonDown
+{
+    
+}
+
+- (void)navigationBarRightButtonDown
+{
+    
 }
 
 @end

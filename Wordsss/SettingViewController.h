@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingViewController : UIViewController
+#import "RKNavigationController.h"
+#import "RKNavigationControllerDelegate.h"
+
+@interface SettingViewController : UIViewController <RKNavigationControllerDelegate>
 
 @end

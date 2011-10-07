@@ -443,19 +443,17 @@
 			isa = PBXGroup;
 			children = (
 				FEBFBF121436DAF20028630E /* Wordsss.xcdatamodeld */,
-				FE523EB1143C6EEE00B2F4FF /* Word.h */,
-				FE523EB2143C6EEE00B2F4FF /* Word.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
 		};
-		FE3FF9AC14384DF400687C80 /* XMLManager */ = {
+		FE3FF9AC14384DF400687C80 /* XMLPhaser */ = {
 			isa = PBXGroup;
 			children = (
 				FEA70AC714387F6C0025313C /* XMLManager.h */,
 				FEA70AC814387F6C0025313C /* XMLManager.m */,
 			);
-			name = XMLManager;
+			name = XMLPhaser;
 			sourceTree = "<group>";
 		};
 		FE3FF9AD14384E1500687C80 /* DataManager */ = {
@@ -483,6 +481,15 @@
 				FEEE31181439CB1B001F7E90 /* SettingViewController.m */,
 			);
 			name = "5 Main";
+			sourceTree = "<group>";
+		};
+		FE77396F143EE1A300554A99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE523EB1143C6EEE00B2F4FF /* Word.h */,
+				FE523EB2143C6EEE00B2F4FF /* Word.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		FE8736BF143DDC53002FDDE8 /* WordView */ = {
@@ -619,9 +626,10 @@
 				FEBFBF101436DAF20028630E /* WordsssAppDelegate.m */,
 				FEE37BB814370F7F00A0E6AC /* Scene */,
 				FEA70AC214387D0E0025313C /* ActorDelegater */,
+				FE77396F143EE1A300554A99 /* Model */,
 				FE3FF9AD14384E1500687C80 /* DataManager */,
 				FE2720941436DCA100CC45FC /* Data */,
-				FE3FF9AC14384DF400687C80 /* XMLManager */,
+				FE3FF9AC14384DF400687C80 /* XMLPhaser */,
 				FEE053D2143798490068CDEC /* Resources */,
 				FEBFBF071436DAF20028630E /* Supporting Files */,
 			);

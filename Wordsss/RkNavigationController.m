@@ -48,7 +48,7 @@
     
     //
     // [self hideBuiltinNavigationBar];
-    [self showCustomNavigationBar];
+     [self showCustomNavigationBar];
 }
 
 - (void)viewDidUnload
@@ -134,14 +134,6 @@
     {
         [[self topViewController] performSelector:@selector(navigationBarRightButtonDown)];
     }
-}
-
-
-#pragma - UINavigationControllerDelegate
-
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    [navigationController performSelector:@selector(initNavigationBar) withObject:viewController];
 }
 
 @end

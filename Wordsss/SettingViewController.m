@@ -32,7 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self initNavigationBar:(RKNavigationController*)[self navigationController]];
 }
 
 - (void)viewDidUnload
@@ -46,6 +47,26 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma - RKNavigationControllerDelegate
+
+- (void)initNavigationBar:(RKNavigationController*)navigationController
+{    
+    [[navigationController titleLabel] setText:@"Lists"];
+    [[navigationController titleImageView] setImage:nil];
+    [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
+    [[navigationController rightButton] setImage:nil forState:UIControlStateNormal];
+}
+
+- (void)navigationBarLeftButtonDown
+{
+    
+}
+
+- (void)navigationBarRightButtonDown
+{
+    
 }
 
 @end

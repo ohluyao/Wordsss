@@ -70,9 +70,7 @@
 #pragma - RKNavigationControllerDelegate
 
 - (void)initNavigationBar:(RKNavigationController*)navigationController
-{
-//    [[self navigationController] setDelegate:self];
-    
+{    
     [[navigationController titleLabel] setText:@""];
     [[navigationController titleImageView] setImage:[UIImage imageNamed:@"title_small.png"]];
     [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
@@ -88,12 +86,5 @@
 {
 
 }
-
-//#pragma - UINavigatinoControllerDelegate
-//
-//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    NSLog(@"1");
-//}
 
 @end

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import "RKNavigationController.h"
+#import "RKNavigationControllerDelegate.h"
+
+@interface ProfileViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, RKNavigationControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UIImageView* profileImageView;
 @property (nonatomic, retain) IBOutlet UILabel* nicknameLabel;
