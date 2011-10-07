@@ -114,7 +114,7 @@
 
 - (void)initNavigationBar:(RKNavigationController*)navigationController
 {    
-    [[navigationController titleLabel] setText:@"Lists"];
+    [[navigationController titleLabel] setText:@"精选词表"];
     [[navigationController titleImageView] setImage:nil];
     [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
     [[navigationController rightButton] setImage:nil forState:UIControlStateNormal];

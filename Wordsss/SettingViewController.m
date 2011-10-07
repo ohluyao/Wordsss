@@ -53,7 +53,7 @@
 
 - (void)initNavigationBar:(RKNavigationController*)navigationController
 {    
-    [[navigationController titleLabel] setText:@"Lists"];
+    [[navigationController titleLabel] setText:@"设置"];
     [[navigationController titleImageView] setImage:nil];
     [[navigationController leftButton] setImage:nil forState:UIControlStateNormal];
     [[navigationController rightButton] setImage:nil forState:UIControlStateNormal];
