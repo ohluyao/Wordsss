@@ -92,19 +92,47 @@
     }
     else if(recognizer.state == UIGestureRecognizerStateEnded) 
     {
+        // - operation
         if(rect.origin.x < 21)
         {
+            // Move Slider
             rect.origin.x = 0;
+            [self.wordSliderImageView setFrame:rect];
+            // 
+            
+            // Move Slider
+            rect.origin.x = 42;
+            [self.wordSliderImageView setFrame:rect];
         }
+        
+        // no operation
         else if(rect.origin.x > 63)
         {
+            // Move Slider
             rect.origin.x = 84;
+            [self.wordSliderImageView setFrame:rect];
+
+            //
+            // No operation
+            
+            // Move Slider
+            rect.origin.x = 42;
+            [self.wordSliderImageView setFrame:rect];
         }
+        
+        // + opration
         else 
         {
+            // Move Slider
             rect.origin.x = 42;
+            [self.wordSliderImageView setFrame:rect];
+            
+            //
+            
+            // Move Slider
+            rect.origin.x = 42;
+            [self.wordSliderImageView setFrame:rect];
         }
-        [self.wordSliderImageView setFrame:rect];
     }
 }
 
@@ -122,12 +150,19 @@
 
 - (void)navigationBarLeftButtonDown
 {
-
+    
 }
 
 - (void)navigationBarRightButtonDown
 {
+    
+}
 
+#pragma - UINavigationControllerDelegate
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [[[self navigationController] topViewController] performSelector:@selector(initNavigationBar:) withObject:[self navigationController]];
 }
 
 @end

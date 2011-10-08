@@ -34,7 +34,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="303">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -540,7 +540,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="284">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -587,7 +587,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="289">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -634,7 +634,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="288">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -681,7 +681,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="290">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -800,4 +800,78 @@
         <image name="word_bg.png" width="320" height="142"/>
         <image name="word_slider.png" width="236" height="34"/>
     </resources>
+    <classes>
+        <class className="ExploreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExploreViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="ListsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListsViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nicknameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profileImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="RKNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RKNavigationController.h"/>
+            <relationships>
+                <relationship kind="action" name="leftButtonDown:"/>
+                <relationship kind="action" name="rigntButtonDown:"/>
+                <relationship kind="outlet" name="leftButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RKTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RKTabBarController.h"/>
+            <relationships/>
+        </class>
+        <class className="SettingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="TodayViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TodayViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="wordDetailSelected:"/>
+                <relationship kind="outlet" name="wordSliderImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="wordSliderTouchArea" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="WordBooksTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordBooksTableViewCell.h"/>
+            <relationships/>
+        </class>
+        <class className="WordBooksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordBooksViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="WordMemsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordMemsViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="WordRelationsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordRelationsViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="WordStatisticsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordStatisticsViewController.h"/>
+            <relationships/>
+        </class>
+        <class className="WordViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectSectionButtonDown:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="wordBooksSectionButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="wordMemsSectionButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="wordRelationsSectionButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="wordStatisticsSectionButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
 </document>
