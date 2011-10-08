@@ -13,7 +13,6 @@
 		FE060C64143CD78A0026228C /* RKNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE060C61143CD78A0026228C /* RKNavigationController.xib */; };
 		FE17D58B143B02110067E780 /* tab_wordtoday.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D589143B02110067E780 /* tab_wordtoday.png */; };
 		FE17D58C143B02110067E780 /* tab_wordtoday@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */; };
-		FE21B00C143D75FA0033B3E8 /* WordBooksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE21B00B143D75FA0033B3E8 /* WordBooksTableViewCell.m */; };
 		FE2B069D14401C3900E1D159 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2B069C14401C3900E1D159 /* icon.png */; };
 		FE2E834F143B289A004A2C56 /* profile_active.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E833F143B2899004A2C56 /* profile_active.png */; };
 		FE2E8350143B289A004A2C56 /* profile_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E8340143B2899004A2C56 /* profile_active@2x.png */; };
@@ -199,8 +198,6 @@
 		FE060C62143CD78A0026228C /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNavigationController.h; sourceTree = "<group>"; };
 		FE17D589143B02110067E780 /* tab_wordtoday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_wordtoday.png; sourceTree = "<group>"; };
 		FE17D58A143B02110067E780 /* tab_wordtoday@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_wordtoday@2x.png"; sourceTree = "<group>"; };
-		FE21B00A143D75FA0033B3E8 /* WordBooksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBooksTableViewCell.h; sourceTree = "<group>"; };
-		FE21B00B143D75FA0033B3E8 /* WordBooksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBooksTableViewCell.m; sourceTree = "<group>"; };
 		FE2B069C14401C3900E1D159 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		FE2E833F143B2899004A2C56 /* profile_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_active.png; sourceTree = "<group>"; };
 		FE2E8340143B2899004A2C56 /* profile_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_active@2x.png"; sourceTree = "<group>"; };
@@ -570,8 +567,6 @@
 				FE2E8360143B2FAC004A2C56 /* WordViewController.m */,
 				FEABC54A143C8A2E005AB8C1 /* WordBooksViewController.h */,
 				FEABC54B143C8A2E005AB8C1 /* WordBooksViewController.m */,
-				FE21B00A143D75FA0033B3E8 /* WordBooksTableViewCell.h */,
-				FE21B00B143D75FA0033B3E8 /* WordBooksTableViewCell.m */,
 				FE873711143DECCF002FDDE8 /* WordRelationsViewController.h */,
 				FE873712143DECCF002FDDE8 /* WordRelationsViewController.m */,
 				FEABC54D143C8A41005AB8C1 /* WordMemsViewController.h */,
@@ -1057,7 +1052,6 @@
 				FE523EB3143C6EEE00B2F4FF /* Word.m in Sources */,
 				FE060C5E143CD7040026228C /* RKTabBarController.m in Sources */,
 				FE060C63143CD78A0026228C /* RkNavigationController.m in Sources */,
-				FE21B00C143D75FA0033B3E8 /* WordBooksTableViewCell.m in Sources */,
 				FE873713143DECD0002FDDE8 /* WordRelationsViewController.m in Sources */,
 				FEFFDE28143F731D002B7126 /* TodayDelegater.m in Sources */,
 				FE66D2D8143F7B0A00B9C780 /* User.m in Sources */,

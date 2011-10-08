@@ -22,9 +22,13 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView* wordSliderImageView;
 @property (nonatomic, retain) IBOutlet UIView* wordSliderTouchArea;
+@property (nonatomic, retain) IBOutlet UIView* wordSliderLeftTapArea;
+@property (nonatomic, retain) IBOutlet UIView* wordSliderRightTapArea;
 
 - (IBAction)wordDetailSelected:(id)sender;
 
 - (void)wordSliderPanning:(UIPanGestureRecognizer*)recognizer;
+- (void)wordSliderLeftTap:(UITapGestureRecognizer*)recognizer;
+- (void)wordSliderRightTap:(UITapGestureRecognizer*)recognizer;
 
 @end

@@ -13,6 +13,8 @@
 
 @synthesize wordSliderImageView;
 @synthesize wordSliderTouchArea;
+@synthesize wordSliderLeftTapArea;
+@synthesize wordSliderRightTapArea;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,9 +50,13 @@
     //
     [[self navigationController] setDelegate:self];
     
-    //
-    UIPanGestureRecognizer* recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wordSliderPanning:)];
-    [[self wordSliderTouchArea] addGestureRecognizer:recognizer];
+    // WordSlider gesture recognizer
+    UIPanGestureRecognizer* recognizerCenter = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wordSliderPanning:)];
+    [[self wordSliderTouchArea] addGestureRecognizer:recognizerCenter];
+    UITapGestureRecognizer* recognizerLeft = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wordSliderLeftTap:)];
+    [[self wordSliderLeftTapArea] addGestureRecognizer:recognizerLeft];
+    UITapGestureRecognizer* recognizerRight = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wordSliderRightTap:)];
+    [[self wordSliderRightTapArea] addGestureRecognizer:recognizerRight];
 }
 
 - (void)viewDidUnload
@@ -66,7 +72,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma -
+#pragma - 
 
 - (IBAction)wordDetailSelected:(id)sender
 {
@@ -98,7 +104,8 @@
             // Move Slider
             rect.origin.x = 0;
             [self.wordSliderImageView setFrame:rect];
-            // 
+            
+            // - operation
             
             // Move Slider
             rect.origin.x = 42;
@@ -112,7 +119,6 @@
             rect.origin.x = 84;
             [self.wordSliderImageView setFrame:rect];
 
-            //
             // No operation
             
             // Move Slider
@@ -127,13 +133,43 @@
             rect.origin.x = 42;
             [self.wordSliderImageView setFrame:rect];
             
-            //
+            // + operation
             
             // Move Slider
             rect.origin.x = 42;
             [self.wordSliderImageView setFrame:rect];
         }
     }
+}
+
+- (void)wordSliderLeftTap:(UITapGestureRecognizer*)recognizer
+{
+    CGRect rect = [self.wordSliderImageView frame];
+
+    // Move Slider
+    rect.origin.x = 0;
+    [self.wordSliderImageView setFrame:rect];
+    
+    // - operation
+    
+    // Move Slider
+//    rect.origin.x = 42;
+//    [self.wordSliderImageView setFrame:rect];
+}
+
+- (void)wordSliderRightTap:(UITapGestureRecognizer*)recognizer
+{
+    CGRect rect = [self.wordSliderImageView frame];
+    
+    // Move Slider
+    rect.origin.x = 84;
+    [self.wordSliderImageView setFrame:rect];
+    
+    // + operation
+    
+    // Move Slider
+    rect.origin.x = 42;
+    [self.wordSliderImageView setFrame:rect];
 }
 
 #pragma - RKNavigationControllerDelegate

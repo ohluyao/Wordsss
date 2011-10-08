@@ -153,4 +153,11 @@
     
 }
 
+#pragma - UINavigationControllerDelegate
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [[[self navigationController] topViewController] performSelector:@selector(initNavigationBar:) withObject:[self navigationController]];
+}
+
 @end

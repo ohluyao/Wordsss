@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1864" systemVersion="11C26" targetRuntime="iOS.CocoaTouch" nextObjectID="350" propertyAccessControl="none" initialViewController="75">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1864" systemVersion="11C26" targetRuntime="iOS.CocoaTouch" nextObjectID="362" propertyAccessControl="none" initialViewController="75">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="865"/>
@@ -146,6 +146,32 @@
                                 <rect key="frame" x="0.0" y="68" width="320" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" alpha="0.30000001192092896" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="351">
+                                <rect key="frame" x="192" y="150" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.63669286489999999" blue="0.69592650280000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.30000001192092896" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="350">
+                                <rect key="frame" x="88" y="150" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.63669286494908239" blue="0.6959265028262136" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="next_word_bg.png" id="333">
                                 <rect key="frame" x="0.0" y="-4" width="320" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,6 +235,8 @@
                     <simulatedMetricsInferredSentinel key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="wordSliderImageView" destination="334" id="348"/>
+                        <outlet property="wordSliderLeftTapArea" destination="350" id="352"/>
+                        <outlet property="wordSliderRightTapArea" destination="351" id="353"/>
                         <outlet property="wordSliderTouchArea" destination="347" id="349"/>
                     </connections>
                 </viewController>
@@ -377,7 +405,7 @@
                                 <rect key="frame" x="25" y="12" width="29" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                                <state key="normal" title="Books" image="segments_translations.png">
+                                <state key="normal" image="segments_translations.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -527,19 +555,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="22" id="259">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="22" id="354">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" lineBreakMode="clip" reuseIdentifier="WordBooksTableViewCell" id="260" customClass="WordBooksTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" lineBreakMode="clip" reuseIdentifier="WordBooksTableViewCell" id="355">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="284">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tableview_cell_divider.png" id="356">
                                                     <rect key="frame" x="0.0" y="41" width="320" height="3"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -551,8 +579,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="192" id="268"/>
-                                    <outlet property="delegate" destination="192" id="269"/>
+                                    <outlet property="dataSource" destination="192" id="360"/>
+                                    <outlet property="delegate" destination="192" id="361"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -840,12 +868,10 @@
             <relationships>
                 <relationship kind="action" name="wordDetailSelected:"/>
                 <relationship kind="outlet" name="wordSliderImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="wordSliderLeftTapArea" candidateClass="UIView"/>
+                <relationship kind="outlet" name="wordSliderRightTapArea" candidateClass="UIView"/>
                 <relationship kind="outlet" name="wordSliderTouchArea" candidateClass="UIView"/>
             </relationships>
-        </class>
-        <class className="WordBooksTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WordBooksTableViewCell.h"/>
-            <relationships/>
         </class>
         <class className="WordBooksViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WordBooksViewController.h"/>
