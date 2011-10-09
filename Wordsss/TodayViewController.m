@@ -98,14 +98,14 @@
     }
     else if(recognizer.state == UIGestureRecognizerStateEnded) 
     {
-        // - operation
+        // + operation
         if(rect.origin.x < 21)
         {
             // Move Slider
             rect.origin.x = 0;
             [self.wordSliderImageView setFrame:rect];
             
-            // - operation
+            // + operation
             
             // Move Slider
             rect.origin.x = 42;
@@ -126,14 +126,14 @@
             [self.wordSliderImageView setFrame:rect];
         }
         
-        // + opration
+        // - opration
         else 
         {
             // Move Slider
             rect.origin.x = 42;
             [self.wordSliderImageView setFrame:rect];
             
-            // + operation
+            // - operation
             
             // Move Slider
             rect.origin.x = 42;
@@ -150,7 +150,7 @@
     rect.origin.x = 0;
     [self.wordSliderImageView setFrame:rect];
     
-    // - operation
+    // + operation
     
     // Move Slider
 //    rect.origin.x = 42;
@@ -164,8 +164,8 @@
     // Move Slider
     rect.origin.x = 84;
     [self.wordSliderImageView setFrame:rect];
-    
-    // + operation
+        
+    // - operation
     
     // Move Slider
     rect.origin.x = 42;

@@ -109,7 +109,7 @@
 - (id)initSectionViewControllers
 {
     WordBooksViewController* wordBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordBooksViewController"];
-    [[wordBooksViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
+    [[wordBooksViewController view] setFrame:CGRectMake(0, 47, 320, 480)];  // 第四个参数480有问题，本应为320，未知问题
     
     WordRelationsViewController* wordRelationsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WordRelationsViewController"];
     [[wordRelationsViewController view] setFrame:CGRectMake(0, 47, 320, 320)];
